@@ -1,1 +1,9 @@
+data **see column_descriptions.txt for a description of each column in each file**
 
+    all_data_standardized_mass.csv : scent data per individual plant. Emission rates are in micrograms scent per hour per g floral fresh mass. Emission rates have been adjusted so that all compounds were present in a minimum of 5x the concentration of the compound in the ambient control and vegetative control samples. Emission rates that did not pass this ratio test were entered as zeros.
+    
+    all_data_standardized_flowers.csv : scent data per individual plant. Emission rates are in micrograms scent per hour per flower. Emission rates have been adjusted so that all compounds were present in a minimum of 5x the concentration of the compound in the ambient control and vegetative control samples. Emission rates that did not pass this ratio test were entered as zeros.
+    
+    SPME_data.csv: data from floral dissections and growth-response curves collected using Solid-Phase Micro Extractions (SPME). See appendix 1 for methodological details
+    
+    GLVs_data.csv: data from wounding common garden. See appendix 2 for methodological details.
