@@ -1,0 +1,421 @@
+﻿Plant,Site,Species,Compound,Type,Con
+GRCO Ung 11,GRCO,Ung,cis 3 hexen 1 ol,Con.N.t.mass,0.00326555
+GRCO Ung 12,GRCO,Ung,cis 3 hexen 1 ol,Con.N.t.mass,0.003558682
+GRCO Ung 14,GRCO,Ung,cis 3 hexen 1 ol,Con.N.t.mass,0.012636411
+GRCO Ung 15,GRCO,Ung,cis 3 hexen 1 ol,Con.N.t.mass,0.008931725
+GRCO Ung 17,GRCO,Ung,cis 3 hexen 1 ol,Con.N.t.mass,0.006698934
+GRCO Ung 18,GRCO,Ung,cis 3 hexen 1 ol,Con.N.t.mass,0.008219753
+GRCO Ung 2,GRCO,Ung,cis 3 hexen 1 ol,Con.N.t.mass,0.016550032
+GRCO Ung 6,GRCO,Ung,cis 3 hexen 1 ol,Con.N.t.mass,0.002053294
+GRCO Ung 7,GRCO,Ung,cis 3 hexen 1 ol,Con.N.t.mass,0.005431883
+GRCO Ung 9,GRCO,Ung,cis 3 hexen 1 ol,Con.N.t.mass,0.0075033
+MCK Cyl 1,MCK,Cyl,cis 3 hexen 1 ol,Con.N.t.mass,0
+MCK Cyl 11,MCK,Cyl,cis 3 hexen 1 ol,Con.N.t.mass,0.006203975
+MCK Cyl 12,MCK,Cyl,cis 3 hexen 1 ol,Con.N.t.mass,0.008128612
+MCK Cyl 15,MCK,Cyl,cis 3 hexen 1 ol,Con.N.t.mass,0.04330055
+MCK Cyl 17,MCK,Cyl,cis 3 hexen 1 ol,Con.N.t.mass,0.010268225
+MCK Cyl 18,MCK,Cyl,cis 3 hexen 1 ol,Con.N.t.mass,0.006525278
+MCK Cyl 20,MCK,Cyl,cis 3 hexen 1 ol,Con.N.t.mass,0.006244403
+MCK Cyl 3,MCK,Cyl,cis 3 hexen 1 ol,Con.N.t.mass,0.004663636
+MCK Cyl 5,MCK,Cyl,cis 3 hexen 1 ol,Con.N.t.mass,0.010941798
+MCK Cyl 6,MCK,Cyl,cis 3 hexen 1 ol,Con.N.t.mass,0.004379094
+MCK Ung 1,MCK,Ung,cis 3 hexen 1 ol,Con.N.t.mass,0.045976512
+MCK Ung 11,MCK,Ung,cis 3 hexen 1 ol,Con.N.t.mass,0.047494261
+MCK Ung 12,MCK,Ung,cis 3 hexen 1 ol,Con.N.t.mass,0.018106343
+MCK Ung 13,MCK,Ung,cis 3 hexen 1 ol,Con.N.t.mass,0.005274872
+MCK Ung 14,MCK,Ung,cis 3 hexen 1 ol,Con.N.t.mass,0.017783989
+MCK Ung 15,MCK,Ung,cis 3 hexen 1 ol,Con.N.t.mass,0.011072762
+MCK Ung 16,MCK,Ung,cis 3 hexen 1 ol,Con.N.t.mass,0.006318044
+MCK Ung 17,MCK,Ung,cis 3 hexen 1 ol,Con.N.t.mass,0.060061581
+MCK Ung 2,MCK,Ung,cis 3 hexen 1 ol,Con.N.t.mass,0.001599143
+MCK Ung 6,MCK,Ung,cis 3 hexen 1 ol,Con.N.t.mass,0.00351088
+MHG Cyl 1,MHG,Cyl,cis 3 hexen 1 ol,Con.N.t.mass,0.001724081
+MHG Cyl 10,MHG,Cyl,cis 3 hexen 1 ol,Con.N.t.mass,0.004997182
+MHG Cyl 11,MHG,Cyl,cis 3 hexen 1 ol,Con.N.t.mass,0.005119286
+MHG Cyl 12,MHG,Cyl,cis 3 hexen 1 ol,Con.N.t.mass,0.00293891
+MHG Cyl 13,MHG,Cyl,cis 3 hexen 1 ol,Con.N.t.mass,0.000709101
+MHG Cyl 14,MHG,Cyl,cis 3 hexen 1 ol,Con.N.t.mass,0.024903127
+MHG Cyl 15,MHG,Cyl,cis 3 hexen 1 ol,Con.N.t.mass,0.026975746
+MHG Cyl 19,MHG,Cyl,cis 3 hexen 1 ol,Con.N.t.mass,0.001409996
+MHG Cyl 7,MHG,Cyl,cis 3 hexen 1 ol,Con.N.t.mass,0.003580512
+MHG Cyl 8,MHG,Cyl,cis 3 hexen 1 ol,Con.N.t.mass,0.033314466
+SC Cyl 10,SC,Cyl,cis 3 hexen 1 ol,Con.N.t.mass,0.003853708
+SC Cyl 13,SC,Cyl,cis 3 hexen 1 ol,Con.N.t.mass,0.064229094
+SC Cyl 17,SC,Cyl,cis 3 hexen 1 ol,Con.N.t.mass,0.004699918
+SC Cyl 18,SC,Cyl,cis 3 hexen 1 ol,Con.N.t.mass,0.004805469
+SC Cyl 19,SC,Cyl,cis 3 hexen 1 ol,Con.N.t.mass,0.023353265
+SC Cyl 2,SC,Cyl,cis 3 hexen 1 ol,Con.N.t.mass,0.01040932
+SC Cyl 20,SC,Cyl,cis 3 hexen 1 ol,Con.N.t.mass,0.014539385
+SC Cyl 4,SC,Cyl,cis 3 hexen 1 ol,Con.N.t.mass,0.013456116
+SC Cyl 8,SC,Cyl,cis 3 hexen 1 ol,Con.N.t.mass,0.025383688
+SC Cyl 9,SC,Cyl,cis 3 hexen 1 ol,Con.N.t.mass,0.007307989
+SC Ung 1,SC,Ung,cis 3 hexen 1 ol,Con.N.t.mass,0.020945289
+SC Ung 10,SC,Ung,cis 3 hexen 1 ol,Con.N.t.mass,0.010654103
+SC Ung 12,SC,Ung,cis 3 hexen 1 ol,Con.N.t.mass,0
+SC Ung 15,SC,Ung,cis 3 hexen 1 ol,Con.N.t.mass,0
+SC Ung 17,SC,Ung,cis 3 hexen 1 ol,Con.N.t.mass,0.009719365
+SC Ung 19,SC,Ung,cis 3 hexen 1 ol,Con.N.t.mass,0
+SC Ung 2,SC,Ung,cis 3 hexen 1 ol,Con.N.t.mass,0.054454352
+SC Ung 20,SC,Ung,cis 3 hexen 1 ol,Con.N.t.mass,0.000167418
+SC Ung 5,SC,Ung,cis 3 hexen 1 ol,Con.N.t.mass,0.167294412
+SC Ung 9,SC,Ung,cis 3 hexen 1 ol,Con.N.t.mass,0.008007907
+GRCO Ung 11,GRCO,Ung,cis 3 hexen 1 ol,Con.W.t.mass,0.008163621
+GRCO Ung 12,GRCO,Ung,cis 3 hexen 1 ol,Con.W.t.mass,0.016509493
+GRCO Ung 14,GRCO,Ung,cis 3 hexen 1 ol,Con.W.t.mass,0.063653811
+GRCO Ung 15,GRCO,Ung,cis 3 hexen 1 ol,Con.W.t.mass,0.015863979
+GRCO Ung 17,GRCO,Ung,cis 3 hexen 1 ol,Con.W.t.mass,0.020650758
+GRCO Ung 18,GRCO,Ung,cis 3 hexen 1 ol,Con.W.t.mass,0.017406627
+GRCO Ung 2,GRCO,Ung,cis 3 hexen 1 ol,Con.W.t.mass,0.016559387
+GRCO Ung 6,GRCO,Ung,cis 3 hexen 1 ol,Con.W.t.mass,0.019178782
+GRCO Ung 7,GRCO,Ung,cis 3 hexen 1 ol,Con.W.t.mass,0.00632926
+GRCO Ung 9,GRCO,Ung,cis 3 hexen 1 ol,Con.W.t.mass,0.011855886
+MCK Cyl 1,MCK,Cyl,cis 3 hexen 1 ol,Con.W.t.mass,0.014884206
+MCK Cyl 11,MCK,Cyl,cis 3 hexen 1 ol,Con.W.t.mass,0.013517624
+MCK Cyl 12,MCK,Cyl,cis 3 hexen 1 ol,Con.W.t.mass,0.016304253
+MCK Cyl 15,MCK,Cyl,cis 3 hexen 1 ol,Con.W.t.mass,0.047823132
+MCK Cyl 17,MCK,Cyl,cis 3 hexen 1 ol,Con.W.t.mass,0.042731902
+MCK Cyl 18,MCK,Cyl,cis 3 hexen 1 ol,Con.W.t.mass,0.019903974
+MCK Cyl 20,MCK,Cyl,cis 3 hexen 1 ol,Con.W.t.mass,0.034254434
+MCK Cyl 3,MCK,Cyl,cis 3 hexen 1 ol,Con.W.t.mass,0.022053681
+MCK Cyl 5,MCK,Cyl,cis 3 hexen 1 ol,Con.W.t.mass,0.01319153
+MCK Cyl 6,MCK,Cyl,cis 3 hexen 1 ol,Con.W.t.mass,0.042241142
+MCK Ung 1,MCK,Ung,cis 3 hexen 1 ol,Con.W.t.mass,0.063872788
+MCK Ung 11,MCK,Ung,cis 3 hexen 1 ol,Con.W.t.mass,0.033816612
+MCK Ung 12,MCK,Ung,cis 3 hexen 1 ol,Con.W.t.mass,0.055576016
+MCK Ung 13,MCK,Ung,cis 3 hexen 1 ol,Con.W.t.mass,0.028573886
+MCK Ung 14,MCK,Ung,cis 3 hexen 1 ol,Con.W.t.mass,0.029745501
+MCK Ung 15,MCK,Ung,cis 3 hexen 1 ol,Con.W.t.mass,0.055441177
+MCK Ung 16,MCK,Ung,cis 3 hexen 1 ol,Con.W.t.mass,0.026554698
+MCK Ung 17,MCK,Ung,cis 3 hexen 1 ol,Con.W.t.mass,0.04184528
+MCK Ung 2,MCK,Ung,cis 3 hexen 1 ol,Con.W.t.mass,0.017630372
+MCK Ung 6,MCK,Ung,cis 3 hexen 1 ol,Con.W.t.mass,0.024871295
+MHG Cyl 1,MHG,Cyl,cis 3 hexen 1 ol,Con.W.t.mass,0.005154225
+MHG Cyl 10,MHG,Cyl,cis 3 hexen 1 ol,Con.W.t.mass,0.010012659
+MHG Cyl 11,MHG,Cyl,cis 3 hexen 1 ol,Con.W.t.mass,0.02314163
+MHG Cyl 12,MHG,Cyl,cis 3 hexen 1 ol,Con.W.t.mass,0.00149763
+MHG Cyl 13,MHG,Cyl,cis 3 hexen 1 ol,Con.W.t.mass,0.010928776
+MHG Cyl 14,MHG,Cyl,cis 3 hexen 1 ol,Con.W.t.mass,0.017287145
+MHG Cyl 15,MHG,Cyl,cis 3 hexen 1 ol,Con.W.t.mass,0.044534649
+MHG Cyl 19,MHG,Cyl,cis 3 hexen 1 ol,Con.W.t.mass,0.018020405
+MHG Cyl 7,MHG,Cyl,cis 3 hexen 1 ol,Con.W.t.mass,0.009770269
+MHG Cyl 8,MHG,Cyl,cis 3 hexen 1 ol,Con.W.t.mass,0.047973165
+SC Cyl 10,SC,Cyl,cis 3 hexen 1 ol,Con.W.t.mass,0.007900392
+SC Cyl 13,SC,Cyl,cis 3 hexen 1 ol,Con.W.t.mass,0.042910505
+SC Cyl 17,SC,Cyl,cis 3 hexen 1 ol,Con.W.t.mass,0.028449338
+SC Cyl 18,SC,Cyl,cis 3 hexen 1 ol,Con.W.t.mass,0.010212713
+SC Cyl 19,SC,Cyl,cis 3 hexen 1 ol,Con.W.t.mass,0.02880542
+SC Cyl 2,SC,Cyl,cis 3 hexen 1 ol,Con.W.t.mass,0.006261951
+SC Cyl 20,SC,Cyl,cis 3 hexen 1 ol,Con.W.t.mass,0.014954698
+SC Cyl 4,SC,Cyl,cis 3 hexen 1 ol,Con.W.t.mass,0.011293895
+SC Cyl 8,SC,Cyl,cis 3 hexen 1 ol,Con.W.t.mass,0.010874255
+SC Cyl 9,SC,Cyl,cis 3 hexen 1 ol,Con.W.t.mass,0.043304496
+SC Ung 1,SC,Ung,cis 3 hexen 1 ol,Con.W.t.mass,0.082466281
+SC Ung 10,SC,Ung,cis 3 hexen 1 ol,Con.W.t.mass,0.036663664
+SC Ung 12,SC,Ung,cis 3 hexen 1 ol,Con.W.t.mass,0.02260774
+SC Ung 15,SC,Ung,cis 3 hexen 1 ol,Con.W.t.mass,0.029829491
+SC Ung 17,SC,Ung,cis 3 hexen 1 ol,Con.W.t.mass,0.027821179
+SC Ung 19,SC,Ung,cis 3 hexen 1 ol,Con.W.t.mass,0.002367379
+SC Ung 2,SC,Ung,cis 3 hexen 1 ol,Con.W.t.mass,0.023755442
+SC Ung 20,SC,Ung,cis 3 hexen 1 ol,Con.W.t.mass,0.010379961
+SC Ung 5,SC,Ung,cis 3 hexen 1 ol,Con.W.t.mass,0.034691018
+SC Ung 9,SC,Ung,cis 3 hexen 1 ol,Con.W.t.mass,0.026494493
+GRCO Ung 11,GRCO,Ung,cis 3 hexenyl acetate,Con.N.t.mass,0.047223838
+GRCO Ung 12,GRCO,Ung,cis 3 hexenyl acetate,Con.N.t.mass,0.090501312
+GRCO Ung 14,GRCO,Ung,cis 3 hexenyl acetate,Con.N.t.mass,0.121305094
+GRCO Ung 15,GRCO,Ung,cis 3 hexenyl acetate,Con.N.t.mass,0.166940096
+GRCO Ung 17,GRCO,Ung,cis 3 hexenyl acetate,Con.N.t.mass,0.050785077
+GRCO Ung 18,GRCO,Ung,cis 3 hexenyl acetate,Con.N.t.mass,0.181731444
+GRCO Ung 2,GRCO,Ung,cis 3 hexenyl acetate,Con.N.t.mass,0.09204805
+GRCO Ung 6,GRCO,Ung,cis 3 hexenyl acetate,Con.N.t.mass,0.018313607
+GRCO Ung 7,GRCO,Ung,cis 3 hexenyl acetate,Con.N.t.mass,0.037446468
+GRCO Ung 9,GRCO,Ung,cis 3 hexenyl acetate,Con.N.t.mass,0.036771404
+MCK Cyl 1,MCK,Cyl,cis 3 hexenyl acetate,Con.N.t.mass,0.115751225
+MCK Cyl 11,MCK,Cyl,cis 3 hexenyl acetate,Con.N.t.mass,0.059954129
+MCK Cyl 12,MCK,Cyl,cis 3 hexenyl acetate,Con.N.t.mass,0.189645778
+MCK Cyl 15,MCK,Cyl,cis 3 hexenyl acetate,Con.N.t.mass,0.139247883
+MCK Cyl 17,MCK,Cyl,cis 3 hexenyl acetate,Con.N.t.mass,0.24235892
+MCK Cyl 18,MCK,Cyl,cis 3 hexenyl acetate,Con.N.t.mass,0.239872207
+MCK Cyl 20,MCK,Cyl,cis 3 hexenyl acetate,Con.N.t.mass,0.333484337
+MCK Cyl 3,MCK,Cyl,cis 3 hexenyl acetate,Con.N.t.mass,0.153453869
+MCK Cyl 5,MCK,Cyl,cis 3 hexenyl acetate,Con.N.t.mass,0.325322816
+MCK Cyl 6,MCK,Cyl,cis 3 hexenyl acetate,Con.N.t.mass,0.050564183
+MCK Ung 1,MCK,Ung,cis 3 hexenyl acetate,Con.N.t.mass,0.729896238
+MCK Ung 11,MCK,Ung,cis 3 hexenyl acetate,Con.N.t.mass,0.778106035
+MCK Ung 12,MCK,Ung,cis 3 hexenyl acetate,Con.N.t.mass,0.021917818
+MCK Ung 13,MCK,Ung,cis 3 hexenyl acetate,Con.N.t.mass,0.112266416
+MCK Ung 14,MCK,Ung,cis 3 hexenyl acetate,Con.N.t.mass,0.126664884
+MCK Ung 15,MCK,Ung,cis 3 hexenyl acetate,Con.N.t.mass,0.1721884
+MCK Ung 16,MCK,Ung,cis 3 hexenyl acetate,Con.N.t.mass,0.244529958
+MCK Ung 17,MCK,Ung,cis 3 hexenyl acetate,Con.N.t.mass,0.317829624
+MCK Ung 2,MCK,Ung,cis 3 hexenyl acetate,Con.N.t.mass,0.029430451
+MCK Ung 6,MCK,Ung,cis 3 hexenyl acetate,Con.N.t.mass,0.109302552
+MHG Cyl 1,MHG,Cyl,cis 3 hexenyl acetate,Con.N.t.mass,0.130450848
+MHG Cyl 10,MHG,Cyl,cis 3 hexenyl acetate,Con.N.t.mass,0.279228169
+MHG Cyl 11,MHG,Cyl,cis 3 hexenyl acetate,Con.N.t.mass,0.277829249
+MHG Cyl 12,MHG,Cyl,cis 3 hexenyl acetate,Con.N.t.mass,0.309157724
+MHG Cyl 13,MHG,Cyl,cis 3 hexenyl acetate,Con.N.t.mass,0.060302636
+MHG Cyl 14,MHG,Cyl,cis 3 hexenyl acetate,Con.N.t.mass,0.570205024
+MHG Cyl 15,MHG,Cyl,cis 3 hexenyl acetate,Con.N.t.mass,0.396663585
+MHG Cyl 19,MHG,Cyl,cis 3 hexenyl acetate,Con.N.t.mass,0.110737853
+MHG Cyl 7,MHG,Cyl,cis 3 hexenyl acetate,Con.N.t.mass,0.122163228
+MHG Cyl 8,MHG,Cyl,cis 3 hexenyl acetate,Con.N.t.mass,0.127764591
+SC Cyl 10,SC,Cyl,cis 3 hexenyl acetate,Con.N.t.mass,0.07927157
+SC Cyl 13,SC,Cyl,cis 3 hexenyl acetate,Con.N.t.mass,0.070757999
+SC Cyl 17,SC,Cyl,cis 3 hexenyl acetate,Con.N.t.mass,0.073909779
+SC Cyl 18,SC,Cyl,cis 3 hexenyl acetate,Con.N.t.mass,0.192756053
+SC Cyl 19,SC,Cyl,cis 3 hexenyl acetate,Con.N.t.mass,0.0657508
+SC Cyl 2,SC,Cyl,cis 3 hexenyl acetate,Con.N.t.mass,0.05101293
+SC Cyl 20,SC,Cyl,cis 3 hexenyl acetate,Con.N.t.mass,0.576229083
+SC Cyl 4,SC,Cyl,cis 3 hexenyl acetate,Con.N.t.mass,0.465125445
+SC Cyl 8,SC,Cyl,cis 3 hexenyl acetate,Con.N.t.mass,0.48804413
+SC Cyl 9,SC,Cyl,cis 3 hexenyl acetate,Con.N.t.mass,0.212748177
+SC Ung 1,SC,Ung,cis 3 hexenyl acetate,Con.N.t.mass,0.234396145
+SC Ung 10,SC,Ung,cis 3 hexenyl acetate,Con.N.t.mass,0.237042341
+SC Ung 12,SC,Ung,cis 3 hexenyl acetate,Con.N.t.mass,0
+SC Ung 15,SC,Ung,cis 3 hexenyl acetate,Con.N.t.mass,0.031261526
+SC Ung 17,SC,Ung,cis 3 hexenyl acetate,Con.N.t.mass,0.179733754
+SC Ung 19,SC,Ung,cis 3 hexenyl acetate,Con.N.t.mass,0
+SC Ung 2,SC,Ung,cis 3 hexenyl acetate,Con.N.t.mass,0.317110421
+SC Ung 20,SC,Ung,cis 3 hexenyl acetate,Con.N.t.mass,0.096145039
+SC Ung 5,SC,Ung,cis 3 hexenyl acetate,Con.N.t.mass,1.223653992
+SC Ung 9,SC,Ung,cis 3 hexenyl acetate,Con.N.t.mass,0.304379257
+GRCO Ung 11,GRCO,Ung,cis 3 hexenyl acetate,Con.W.t.mass,0.065907869
+GRCO Ung 12,GRCO,Ung,cis 3 hexenyl acetate,Con.W.t.mass,0.196540167
+GRCO Ung 14,GRCO,Ung,cis 3 hexenyl acetate,Con.W.t.mass,0.336401437
+GRCO Ung 15,GRCO,Ung,cis 3 hexenyl acetate,Con.W.t.mass,0.247476488
+GRCO Ung 17,GRCO,Ung,cis 3 hexenyl acetate,Con.W.t.mass,0.102525951
+GRCO Ung 18,GRCO,Ung,cis 3 hexenyl acetate,Con.W.t.mass,0.141338066
+GRCO Ung 2,GRCO,Ung,cis 3 hexenyl acetate,Con.W.t.mass,0.055132159
+GRCO Ung 6,GRCO,Ung,cis 3 hexenyl acetate,Con.W.t.mass,0.432874975
+GRCO Ung 7,GRCO,Ung,cis 3 hexenyl acetate,Con.W.t.mass,0.048674295
+GRCO Ung 9,GRCO,Ung,cis 3 hexenyl acetate,Con.W.t.mass,0.051794277
+MCK Cyl 1,MCK,Cyl,cis 3 hexenyl acetate,Con.W.t.mass,0.370882539
+MCK Cyl 11,MCK,Cyl,cis 3 hexenyl acetate,Con.W.t.mass,0.092412156
+MCK Cyl 12,MCK,Cyl,cis 3 hexenyl acetate,Con.W.t.mass,0.292676732
+MCK Cyl 15,MCK,Cyl,cis 3 hexenyl acetate,Con.W.t.mass,0.196927569
+MCK Cyl 17,MCK,Cyl,cis 3 hexenyl acetate,Con.W.t.mass,0.702590583
+MCK Cyl 18,MCK,Cyl,cis 3 hexenyl acetate,Con.W.t.mass,0.37965117
+MCK Cyl 20,MCK,Cyl,cis 3 hexenyl acetate,Con.W.t.mass,0.634924696
+MCK Cyl 3,MCK,Cyl,cis 3 hexenyl acetate,Con.W.t.mass,0.463604586
+MCK Cyl 5,MCK,Cyl,cis 3 hexenyl acetate,Con.W.t.mass,0.272535563
+MCK Cyl 6,MCK,Cyl,cis 3 hexenyl acetate,Con.W.t.mass,0.416817286
+MCK Ung 1,MCK,Ung,cis 3 hexenyl acetate,Con.W.t.mass,0.557547301
+MCK Ung 11,MCK,Ung,cis 3 hexenyl acetate,Con.W.t.mass,0.566319608
+MCK Ung 12,MCK,Ung,cis 3 hexenyl acetate,Con.W.t.mass,0.186410661
+MCK Ung 13,MCK,Ung,cis 3 hexenyl acetate,Con.W.t.mass,0.175474617
+MCK Ung 14,MCK,Ung,cis 3 hexenyl acetate,Con.W.t.mass,0.339175647
+MCK Ung 15,MCK,Ung,cis 3 hexenyl acetate,Con.W.t.mass,0.355168935
+MCK Ung 16,MCK,Ung,cis 3 hexenyl acetate,Con.W.t.mass,0.491605168
+MCK Ung 17,MCK,Ung,cis 3 hexenyl acetate,Con.W.t.mass,0.252554584
+MCK Ung 2,MCK,Ung,cis 3 hexenyl acetate,Con.W.t.mass,0.287130864
+MCK Ung 6,MCK,Ung,cis 3 hexenyl acetate,Con.W.t.mass,0.287805952
+MHG Cyl 1,MHG,Cyl,cis 3 hexenyl acetate,Con.W.t.mass,0.269731217
+MHG Cyl 10,MHG,Cyl,cis 3 hexenyl acetate,Con.W.t.mass,0.500645329
+MHG Cyl 11,MHG,Cyl,cis 3 hexenyl acetate,Con.W.t.mass,0.728542395
+MHG Cyl 12,MHG,Cyl,cis 3 hexenyl acetate,Con.W.t.mass,0.151844304
+MHG Cyl 13,MHG,Cyl,cis 3 hexenyl acetate,Con.W.t.mass,0.223521019
+MHG Cyl 14,MHG,Cyl,cis 3 hexenyl acetate,Con.W.t.mass,0.390333243
+MHG Cyl 15,MHG,Cyl,cis 3 hexenyl acetate,Con.W.t.mass,0.584409716
+MHG Cyl 19,MHG,Cyl,cis 3 hexenyl acetate,Con.W.t.mass,0.28111652
+MHG Cyl 7,MHG,Cyl,cis 3 hexenyl acetate,Con.W.t.mass,0.298836297
+MHG Cyl 8,MHG,Cyl,cis 3 hexenyl acetate,Con.W.t.mass,0.023678324
+SC Cyl 10,SC,Cyl,cis 3 hexenyl acetate,Con.W.t.mass,0.207853717
+SC Cyl 13,SC,Cyl,cis 3 hexenyl acetate,Con.W.t.mass,0.063639622
+SC Cyl 17,SC,Cyl,cis 3 hexenyl acetate,Con.W.t.mass,0.391278429
+SC Cyl 18,SC,Cyl,cis 3 hexenyl acetate,Con.W.t.mass,0.289956981
+SC Cyl 19,SC,Cyl,cis 3 hexenyl acetate,Con.W.t.mass,0.263718052
+SC Cyl 2,SC,Cyl,cis 3 hexenyl acetate,Con.W.t.mass,0.162293943
+SC Cyl 20,SC,Cyl,cis 3 hexenyl acetate,Con.W.t.mass,0.304717718
+SC Cyl 4,SC,Cyl,cis 3 hexenyl acetate,Con.W.t.mass,0.400331092
+SC Cyl 8,SC,Cyl,cis 3 hexenyl acetate,Con.W.t.mass,0.109793165
+SC Cyl 9,SC,Cyl,cis 3 hexenyl acetate,Con.W.t.mass,0.284473576
+SC Ung 1,SC,Ung,cis 3 hexenyl acetate,Con.W.t.mass,0.626998773
+SC Ung 10,SC,Ung,cis 3 hexenyl acetate,Con.W.t.mass,0.58716118
+SC Ung 12,SC,Ung,cis 3 hexenyl acetate,Con.W.t.mass,0.929758475
+SC Ung 15,SC,Ung,cis 3 hexenyl acetate,Con.W.t.mass,0.447883911
+SC Ung 17,SC,Ung,cis 3 hexenyl acetate,Con.W.t.mass,0.38979597
+SC Ung 19,SC,Ung,cis 3 hexenyl acetate,Con.W.t.mass,0.341301126
+SC Ung 2,SC,Ung,cis 3 hexenyl acetate,Con.W.t.mass,0.184675115
+SC Ung 20,SC,Ung,cis 3 hexenyl acetate,Con.W.t.mass,0.464403809
+SC Ung 5,SC,Ung,cis 3 hexenyl acetate,Con.W.t.mass,0.408015576
+SC Ung 9,SC,Ung,cis 3 hexenyl acetate,Con.W.t.mass,0.578146384
+,MHG,Cyl,cis 3 hexenyl acetate,First CG,0.034495822
+,MHG,Cyl,cis 3 hexenyl acetate,First CG,0.234583529
+,MHG,Cyl,cis 3 hexenyl acetate,First CG,0.066524555
+,MHG,Cyl,cis 3 hexenyl acetate,First CG,0.029633207
+,MHG,Cyl,cis 3 hexenyl acetate,First CG,0.041806051
+,MHG,Cyl,cis 3 hexenyl acetate,First CG,0.064564464
+,MHG,Cyl,cis 3 hexenyl acetate,First CG,0.142854621
+,MHG,Cyl,cis 3 hexenyl acetate,First CG,0.23969392
+,MHG,Cyl,cis 3 hexenyl acetate,First CG,0
+,MHG,Cyl,cis 3 hexenyl acetate,First CG,0.222414348
+,MHG,Cyl,cis 3 hexenyl acetate,First CG,0.052205362
+,MHG,Cyl,cis 3 hexenyl acetate,First CG,0.002995901
+,MHG,Cyl,cis 3 hexenyl acetate,First CG,0.195963344
+,MHG,Cyl,cis 3 hexenyl acetate,First CG,0.125076236
+,MHG,Cyl,cis 3 hexenyl acetate,First CG,0.551136947
+,MHG,Cyl,cis 3 hexen 1 ol,First CG,0
+,MHG,Cyl,cis 3 hexen 1 ol,First CG,0.024726019
+,MHG,Cyl,cis 3 hexen 1 ol,First CG,0
+,MHG,Cyl,cis 3 hexen 1 ol,First CG,0.047630664
+,MHG,Cyl,cis 3 hexen 1 ol,First CG,0
+,MHG,Cyl,cis 3 hexen 1 ol,First CG,0.001941613
+,MHG,Cyl,cis 3 hexen 1 ol,First CG,0.005177932
+,MHG,Cyl,cis 3 hexen 1 ol,First CG,0.012819826
+,MHG,Cyl,cis 3 hexen 1 ol,First CG,0.002398924
+,MHG,Cyl,cis 3 hexen 1 ol,First CG,0.009148483
+,MHG,Cyl,cis 3 hexen 1 ol,First CG,0.001942415
+,MHG,Cyl,cis 3 hexen 1 ol,First CG,0.008218546
+,MHG,Cyl,cis 3 hexen 1 ol,First CG,0.009896009
+,MHG,Cyl,cis 3 hexen 1 ol,First CG,0.002639227
+,MHG,Cyl,cis 3 hexen 1 ol,First CG,0.035708626
+,SC,Cyl,cis 3 hexen 1 ol,First CG,0.011854723
+,SC,Cyl,cis 3 hexen 1 ol,First CG,0.009140009
+,SC,Cyl,cis 3 hexen 1 ol,First CG,0.029250642
+,SC,Cyl,cis 3 hexen 1 ol,First CG,0.00629843
+,SC,Cyl,cis 3 hexen 1 ol,First CG,0.031206961
+,SC,Cyl,cis 3 hexen 1 ol,First CG,0.009265103
+,SC,Cyl,cis 3 hexen 1 ol,First CG,0.017729703
+,SC,Cyl,cis 3 hexen 1 ol,First CG,0.030416827
+,SC,Cyl,cis 3 hexen 1 ol,First CG,0.008189937
+,SC,Cyl,cis 3 hexen 1 ol,First CG,0.002564824
+,SC,Cyl,cis 3 hexen 1 ol,First CG,0.00606255
+,SC,Cyl,cis 3 hexen 1 ol,First CG,0.003010759
+,SC,Cyl,cis 3 hexen 1 ol,First CG,0.00230286
+,SC,Cyl,cis 3 hexen 1 ol,First CG,0.024475516
+,SC,Cyl,cis 3 hexen 1 ol,First CG,0.140302702
+,SC,Cyl,cis 3 hexenyl acetate,First CG,0.133121184
+,SC,Cyl,cis 3 hexenyl acetate,First CG,0.165276254
+,SC,Cyl,cis 3 hexenyl acetate,First CG,0.250072144
+,SC,Cyl,cis 3 hexenyl acetate,First CG,0
+,SC,Cyl,cis 3 hexenyl acetate,First CG,0.213925476
+,SC,Cyl,cis 3 hexenyl acetate,First CG,0.128242852
+,SC,Cyl,cis 3 hexenyl acetate,First CG,0.082398484
+,SC,Cyl,cis 3 hexenyl acetate,First CG,0.067580918
+,SC,Cyl,cis 3 hexenyl acetate,First CG,0.182178235
+,SC,Cyl,cis 3 hexenyl acetate,First CG,0.017273718
+,SC,Cyl,cis 3 hexenyl acetate,First CG,0
+,SC,Cyl,cis 3 hexenyl acetate,First CG,0.027022765
+,SC,Cyl,cis 3 hexenyl acetate,First CG,0.092233028
+,SC,Cyl,cis 3 hexenyl acetate,First CG,0.106294086
+,SC,Cyl,cis 3 hexenyl acetate,First CG,0.788269941
+,MCK,Cyl,cis 3 hexen 1 ol,First CG,0.018636332
+,MCK,Cyl,cis 3 hexen 1 ol,First CG,0.015615792
+,MCK,Cyl,cis 3 hexen 1 ol,First CG,0.01335592
+,MCK,Cyl,cis 3 hexen 1 ol,First CG,0.011078211
+,MCK,Cyl,cis 3 hexen 1 ol,First CG,0.014782572
+,MCK,Cyl,cis 3 hexen 1 ol,First CG,0.009099818
+,MCK,Cyl,cis 3 hexen 1 ol,First CG,0.011053006
+,MCK,Cyl,cis 3 hexen 1 ol,First CG,0.010899708
+,MCK,Cyl,cis 3 hexen 1 ol,First CG,0.003347178
+,MCK,Cyl,cis 3 hexen 1 ol,First CG,0
+,MCK,Cyl,cis 3 hexen 1 ol,First CG,0.005003423
+,MCK,Cyl,cis 3 hexen 1 ol,First CG,0.013690255
+,MCK,Cyl,cis 3 hexen 1 ol,First CG,0.009098193
+,MCK,Cyl,cis 3 hexen 1 ol,First CG,0
+,MCK,Cyl,cis 3 hexen 1 ol,First CG,0.071371841
+,MCK,Cyl,cis 3 hexenyl acetate,First CG,0.42074793
+,MCK,Cyl,cis 3 hexenyl acetate,First CG,0.161422656
+,MCK,Cyl,cis 3 hexenyl acetate,First CG,0.078704363
+,MCK,Cyl,cis 3 hexenyl acetate,First CG,0.321684082
+,MCK,Cyl,cis 3 hexenyl acetate,First CG,0.240551717
+,MCK,Cyl,cis 3 hexenyl acetate,First CG,0.19644794
+,MCK,Cyl,cis 3 hexenyl acetate,First CG,0.133748684
+,MCK,Cyl,cis 3 hexenyl acetate,First CG,0.204057773
+,MCK,Cyl,cis 3 hexenyl acetate,First CG,0.084870563
+,MCK,Cyl,cis 3 hexenyl acetate,First CG,0.033233647
+,MCK,Cyl,cis 3 hexenyl acetate,First CG,0
+,MCK,Cyl,cis 3 hexenyl acetate,First CG,0.61013057
+,MCK,Cyl,cis 3 hexenyl acetate,First CG,0.139554099
+,MCK,Cyl,cis 3 hexenyl acetate,First CG,0
+,MCK,Cyl,cis 3 hexenyl acetate,First CG,0.464222246
+,GRCO,Ung,cis 3 hexen 1 ol,First CG,0.011509516
+,GRCO,Ung,cis 3 hexen 1 ol,First CG,0.019033039
+,GRCO,Ung,cis 3 hexen 1 ol,First CG,0.00193137
+,GRCO,Ung,cis 3 hexen 1 ol,First CG,0.011541576
+,GRCO,Ung,cis 3 hexen 1 ol,First CG,0.002798428
+,GRCO,Ung,cis 3 hexen 1 ol,First CG,0.014613271
+,GRCO,Ung,cis 3 hexen 1 ol,First CG,0.004314463
+,GRCO,Ung,cis 3 hexen 1 ol,First CG,0.011688182
+,GRCO,Ung,cis 3 hexen 1 ol,First CG,0.010285523
+,GRCO,Ung,cis 3 hexen 1 ol,First CG,0.02181979
+,GRCO,Ung,cis 3 hexen 1 ol,First CG,0.005811665
+,GRCO,Ung,cis 3 hexen 1 ol,First CG,0
+,GRCO,Ung,cis 3 hexen 1 ol,First CG,0.003907657
+,GRCO,Ung,cis 3 hexen 1 ol,First CG,0.019621762
+,GRCO,Ung,cis 3 hexen 1 ol,First CG,0.0177683
+,GRCO,Ung,cis 3 hexenyl acetate,First CG,0.05711407
+,GRCO,Ung,cis 3 hexenyl acetate,First CG,0.217158712
+,GRCO,Ung,cis 3 hexenyl acetate,First CG,0.010191339
+,GRCO,Ung,cis 3 hexenyl acetate,First CG,0.086071848
+,GRCO,Ung,cis 3 hexenyl acetate,First CG,0.030211341
+,GRCO,Ung,cis 3 hexenyl acetate,First CG,0.366760461
+,GRCO,Ung,cis 3 hexenyl acetate,First CG,0.018265602
+,GRCO,Ung,cis 3 hexenyl acetate,First CG,0.075074236
+,GRCO,Ung,cis 3 hexenyl acetate,First CG,0.171995694
+,GRCO,Ung,cis 3 hexenyl acetate,First CG,0.479761601
+,GRCO,Ung,cis 3 hexenyl acetate,First CG,0.124306704
+,GRCO,Ung,cis 3 hexenyl acetate,First CG,0.014923445
+,GRCO,Ung,cis 3 hexenyl acetate,First CG,0.066141111
+,GRCO,Ung,cis 3 hexenyl acetate,First CG,0.310437963
+,GRCO,Ung,cis 3 hexenyl acetate,First CG,0.719875218
+,SC,Ung,cis 3 hexen 1 ol,First CG,0.016969469
+,SC,Ung,cis 3 hexen 1 ol,First CG,0
+,SC,Ung,cis 3 hexen 1 ol,First CG,0.033254273
+,SC,Ung,cis 3 hexen 1 ol,First CG,0.004628192
+,SC,Ung,cis 3 hexen 1 ol,First CG,0.007689862
+,SC,Ung,cis 3 hexen 1 ol,First CG,0.001556426
+,SC,Ung,cis 3 hexen 1 ol,First CG,0.008630754
+,SC,Ung,cis 3 hexen 1 ol,First CG,0.014522275
+,SC,Ung,cis 3 hexen 1 ol,First CG,0.004632056
+,SC,Ung,cis 3 hexen 1 ol,First CG,0.011539366
+,SC,Ung,cis 3 hexen 1 ol,First CG,0.038150088
+,SC,Ung,cis 3 hexen 1 ol,First CG,0.004610722
+,SC,Ung,cis 3 hexen 1 ol,First CG,0.010749745
+,SC,Ung,cis 3 hexen 1 ol,First CG,0.003486837
+,SC,Ung,cis 3 hexen 1 ol,First CG,0.009511625
+,SC,Ung,cis 3 hexenyl acetate,First CG,0.444578953
+,SC,Ung,cis 3 hexenyl acetate,First CG,0.026435091
+,SC,Ung,cis 3 hexenyl acetate,First CG,0.629371677
+,SC,Ung,cis 3 hexenyl acetate,First CG,0.143377716
+,SC,Ung,cis 3 hexenyl acetate,First CG,0.138612594
+,SC,Ung,cis 3 hexenyl acetate,First CG,0
+,SC,Ung,cis 3 hexenyl acetate,First CG,0.166092329
+,SC,Ung,cis 3 hexenyl acetate,First CG,0.189232896
+,SC,Ung,cis 3 hexenyl acetate,First CG,0.095238165
+,SC,Ung,cis 3 hexenyl acetate,First CG,0.284250072
+,SC,Ung,cis 3 hexenyl acetate,First CG,0.813052441
+,SC,Ung,cis 3 hexenyl acetate,First CG,0.054115158
+,SC,Ung,cis 3 hexenyl acetate,First CG,0.951154512
+,SC,Ung,cis 3 hexenyl acetate,First CG,0.075087629
+,SC,Ung,cis 3 hexenyl acetate,First CG,0.233626658
+,MCK,Ung,cis 3 hexen 1 ol,First CG,0.024183207
+,MCK,Ung,cis 3 hexen 1 ol,First CG,0
+,MCK,Ung,cis 3 hexen 1 ol,First CG,0
+,MCK,Ung,cis 3 hexen 1 ol,First CG,0.003652523
+,MCK,Ung,cis 3 hexen 1 ol,First CG,0.005512917
+,MCK,Ung,cis 3 hexen 1 ol,First CG,0.01000614
+,MCK,Ung,cis 3 hexen 1 ol,First CG,0.002574029
+,MCK,Ung,cis 3 hexen 1 ol,First CG,0.032967309
+,MCK,Ung,cis 3 hexen 1 ol,First CG,0.004260338
+,MCK,Ung,cis 3 hexen 1 ol,First CG,0.00698509
+,MCK,Ung,cis 3 hexen 1 ol,First CG,0.001387409
+,MCK,Ung,cis 3 hexen 1 ol,First CG,0.014615074
+,MCK,Ung,cis 3 hexen 1 ol,First CG,0.004139861
+,MCK,Ung,cis 3 hexen 1 ol,First CG,0.006538462
+,MCK,Ung,cis 3 hexen 1 ol,First CG,0.017424803
+,MCK,Ung,cis 3 hexenyl acetate,First CG,0.048527139
+,MCK,Ung,cis 3 hexenyl acetate,First CG,0.105547299
+,MCK,Ung,cis 3 hexenyl acetate,First CG,0.021392267
+,MCK,Ung,cis 3 hexenyl acetate,First CG,0.069810434
+,MCK,Ung,cis 3 hexenyl acetate,First CG,0.087136843
+,MCK,Ung,cis 3 hexenyl acetate,First CG,0.076466288
+,MCK,Ung,cis 3 hexenyl acetate,First CG,0.070727202
+,MCK,Ung,cis 3 hexenyl acetate,First CG,0.465999935
+,MCK,Ung,cis 3 hexenyl acetate,First CG,0.085444922
+,MCK,Ung,cis 3 hexenyl acetate,First CG,0.12524962
+,MCK,Ung,cis 3 hexenyl acetate,First CG,0.022416246
+,MCK,Ung,cis 3 hexenyl acetate,First CG,0.169136653
+,MCK,Ung,cis 3 hexenyl acetate,First CG,0.05529646
+,MCK,Ung,cis 3 hexenyl acetate,First CG,0.258127276
+,MCK,Ung,cis 3 hexenyl acetate,First CG,0.443030815
