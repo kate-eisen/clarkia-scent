@@ -1,11 +1,12 @@
 library(reshape2)
-setwd("Dropbox/R projects/Scent")
 
-spme<-read.csv("SPME_data_no_blanks.csv",header=TRUE)
+
+spme<-read.csv("data/SPME_data_no_blanks.csv",header=TRUE)
 
 spme_wide<-dcast(spme, Sample~Name, sum, value.var="Area")
-spme_ID<-read.csv("SPME_info.csv",header=TRUE)
+spme_ID<-read.csv("data/SPME_info.csv",header=TRUE)
 
+#adding species and community info:
 spme_wide<-cbind(spme_wide, spme_ID[,2:4])
 
 CB323<-spme_wide[which(spme_wide$Site=="CB323"),]
