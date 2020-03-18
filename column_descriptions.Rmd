@@ -178,24 +178,124 @@ D  | Compound | The name of the compound, either cis 3 hexen 1 ol or cis 3 hexen
 E  | Type | The type of sample: Con.N.t.mass refers to *non-wounded* samples from the *2019* garden, Con.W.t.mass refers to *wounded* samples from the *2019* garden, and *First CG* refers to samples from the *2018* original garden. 
 F  | Con  | The emission rate, in micrograms of the compound per hour per gram of fresh mass
 
-## SPME_info.csv
+## 3_6_spmes.csv
 Column Position  | Column Name | Description of Contents
 ------------- | ------------- | -------------------------
-A  | Sample | The sample ID. Number refers to the order the sample was collected and run. The A and B letters indicate the pair of samples from the plant
-B  | Site  | The name of the unique replicate community
-C  | Species  | The species of the sample. Cyl is C. cylindrica, Ung is C. unguiculata
-D  | Type  | The sample type: Petals is a petal sample, non-petals is a sample of the rest of the flowers. 3.Fl is a three-flower sample, and 6.Fl is a six flower sample
+A  | Total.N | The total number of compounds in the sample
+B  | Sample  | The sample ID. Number refers to the order the sample was collected and run. The A and B letters indicate the pair of samples from the plant
+C  | Type  | 3.Fl is a three-flower sample, and 6.Fl is a six flower sample
+D  | N.mono | The number of monoterpene compounds in the sample
+E  | N.sesqui | The number of sesquiterpene compounds in the sample
+F  | N.arom | The number of aromatic compounds in the sample
+G  | N.glv | The number of glv compound in the sample
 
-## SPME_data_no_blanks.csv
+## spme_petals_matrix.csv
+*In columns J through AX, a 1 indicates the compound was present, and a 0 indicates that the compound was absent*
+
 Column Position  | Column Name | Description of Contents
 ------------- | ------------- | -------------------------
-A  | Date | Date the sample was run. All sample were run in 2019.
+A  | Site  | The name of the unique replicate community
+B  | Species  | The species of the sample. Cyl is C. cylindrica, Ung is C. unguiculata
+C  | Sample.Type | Not.Petals are non-petal samples, Petals are petal samples
+D  | Sample.ID | The sample ID. Number refers to the order the sample was collected and run. The A and B letters indicate the pair of samples from the plant
+E  | Total | The total number of compounds in the sample
+F  | Total.mono | The total number of monoterpene compounds in the sample
+G  | Total.sesqui | The total number of sesquiterpene compounds in the sample
+H  | Total.arom | The total number of aromatic compounds in the sample
+I | Total.glv  | The total number of glv compound in the sample
+J  | alpha.pinene  | The presence/absence of alpha pinene
+K  | beta.pinene  | The presence/absence of beta pinene
+L  | beta.myrcene  | The presence/absence of beta myrcene
+M  | limonene  | The presence/absence of limonene
+N  | gamma.terpinene  | The presence/absence of gamma terpinene
+O  | cis.3.hexenyl.acetate  | The presence/absence of cis 3 hexenyl acetate
+P  | cis.3.hexen.1.ol | The presence/absence of cis 3 hexen 1 ol
+Q | trans.beta.caryophyllene | The presence/absence of trans beta caryophyllene
+R | alloaromadendrene | The presence/absence of alloaromadendrene
+S  | alpha.humulene | The presence/absence of alpha humulene
+T | beta.cadinene | The presence/absence of beta cadinene
+U | germacrene.D | The presence/absence of germacrene D
+V | beta.longipinene | The presence/absence of beta longipinene
+W  | unknown.C15H24.2 | The presence/absence of the unknown C15H24 #2
+X | gamma.cadinene | The presence/absence of gamma cadinene
+Y | unknown.C15H24.3 | The presence/absence of the unknown C15H24 #3
+Z  | sabinene | The presence/absence of sabinene
+AA | alpha.terpinene | The presence/absence of alpha terpinene
+AB  | beta.phellandrene | The presence/absence of beta phellandrene
+AC | trans.beta.ocimene | The presence/absence of trans beta ocimene
+AD | para.cymene | The presence/absence of para cymene
+AE | alpha.terpinolene | The presence/absence of alpha terpinolene
+AF | terpinene.4.ol | The presence/absence of terpinene 4 ol
+AG | methyl.salicylate | The presence/absence of methyl salicylate
+AH  | linalool | The presence/absence of linalool
+AI | cis.beta.ocimene | The presence/absence of cis beta ocimene
+AJ | myroxide | The presence/absence of myroxide
+AK | bergamotene | The presence/absence of bergamotene
+AL | veratrole | The presence/absence of veratrole
+AM | beta.sesquiphellandrene | The presence/absence of beta sesquiphellandrene
+AN  | cis.DMNT | The presence/absence of cis dimethylnonatriene
+AO | 1.hexanol | The presence/absence of 1 hexanol
+AP | benzyl.alcohol | The presence/absence of benzyl alcohol
+AQ | intermedeol | The presence/absence of intermedeol
+AR | unknown.C15H24.(1) | The presence/absence of the unknown C15H24 #1
+AS | alpha.terpineol | The presence/absence of alpha terpineol
+AT  | 2.6.dimethyl.1.3.5.7.octatetraene.(trans) | The presence/absence of 2.6.dimethyl.1.3.5.7.octatetraene.(trans)
+AU | 6.Methyl.5.heptene.2.one | The presence/absence of 6.Methyl.5.heptene.2.one
+AV | trans.2.hexen.1.ol | The presence/absence of trans 2 hexen 1 ol
+AW | sabinene.hydrate | The presence/absence of sabinene hydrate
+AX | trans.trans.alpha.farnesene | The presence/absence of trans trans alpha farnesene
+
+## spme_wide.csv
+Column Position  | Column Name | Description of Contents
+------------- | ------------- | -------------------------
+A  | Order  | Abitrary ID 
 B  | Sample  | The sample ID
-C  | Peak#  | The number of a given peak within a given sample (a relative value that could change from sample to sample for a given compound)
-D  | Ret.Time  | The retention time of the compound
-E  | Area | The peak area of the compound
-F  | Name | The name of the compound. See Table S2 for IUPAC names
-
+C  | er.1.hexanol  | The peak area of 1-hexanol
+D  | er.2.6.dimethyl.1.3.5.7.octatetraene  | The peak area of 2,6-dimethyl-1,3,5,7.octatetraene.(trans) 
+E  | er.2-amino.phenyl.ethanone  | The peak area of 2-amino phenyl ethanone
+F  | er.6-methyl-5-hepten-2-one  | The peak area of 6-methyl-5-hepten-2-one
+G  | alloaromadendrene  | The peak area of alloaromadendrene
+H  | alpha.humulene | The peak area of alpha humulene
+I | alpha.pinene | The peak area of alpha pinene
+J  | alpha.terpinene | The peak area of alpha terpinene
+K  | alpha.terpineol | The peak area of alpha terpineol
+L  | alpha.terpinolene | The peak area of alpha terpinolene
+M  | benzyl.alcohol | The peak area of benzyl alcohol
+N  | bergamotene | The peak area of bergamotene
+O  | beta.cadinene | The peak area of beta cadinene
+P  | beta.longipinene | The peak area of beta longipinene
+Q | beta.myrcene | The peak area of beta myrcene
+R | beta.phellandrene | The peak area of beta phellandrene
+S  | beta.pinene | The peak area of beta pinene
+T | beta.sesquiphellandrene | The peak area of beta sesquiphellandrene
+U | cis.3.hexen.1.ol | The peak area of cis 3 hexen 1 ol
+V | cis.3.hexenyl.acetate | The peak area of cis 3 hexenyl acetate
+W  | cis.beta.ocimene | The peak area of cis beta ocimene
+X | cis.DMNT | The peak area of cis dimethylnonatriene
+Y | gamma.cadinene | The peak area of gamma cadinene
+Z  | gamma.terpinene | The peak area of gamma terpinene
+AA | germacrene.D | The peak area of germacrene D
+AB  | intermedeol | The peak area of intermedeol
+AC | limonene | The peak area of limonene
+AD | linalool | The peak area of linalool
+AE | methyl.salicylate | The peak area of methyl salicylate
+AF | myroxide | The peak area of myroxide
+AG | para.cymene | The peak area of para cymene
+AH  | sabinene.hydrate | The peak area of sabinene hydrate
+AI | sabinene | The peak area of sabinene
+AJ | terpinene.4.ol | The peak area of terpinene 4 ol
+AK | trans.2.hexen.1.ol | The peak area of trans 2 hexen 1 ol
+AL | trans.beta.caryophyllene | The peak area of trans beta caryophyllene
+AM | trans.beta.ocimene | The peak area of trans beta ocimene
+AN  | trans.trans.alpha.farnesene | The peak area of trans trans alpha farnesene
+AO | unknown.C15H24.1 | The peak area of unknown C15H24 #1
+AP | unknown.C15H24.2  | The peak area of unknown C15H24 #2
+AQ | unknown.C15H24.3 | The peak area of unknown C15H24 #3
+AR | veratrole | The peak area of veratrole
+AS | verbenone | The peak area of verbenone
+AT  | Site  | The name of the unique replicate community
+AU | Species  | The species of the sample. Cyl is C. cylindrica, Ung is C. unguiculata
+AV  | Type  | The sample type: Petals is a petal sample, non-petals is a sample of the rest of the flowers. 3.Fl is a three-flower sample, and 6.Fl is a six flower sample
 
 
 
