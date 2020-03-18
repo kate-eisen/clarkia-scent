@@ -2,7 +2,7 @@
 
 #basics:
 
-
+library(vegan)
 library(multcomp)
 library(lme4)
 library(emmeans)
@@ -23,222 +23,39 @@ mass.data$glv<-(mass.data$er.1.hexanol+mass.data$er.cis.3.hexen.1.ol+mass.data$e
 mass.data$arom<-(mass.data$er.2.amino.phenyl.ethenone+ mass.data$er.2.phenyl.ethanol+ mass.data$er.benzyl.acetate+ mass.data$er.benzyl.alcohol+ mass.data$er.cinnamic.alcohol+ mass.data$er.methyl.nicotinate+ mass.data$er.methyl.salicylate+ mass.data$er.trans.cinnamic.aldehyde+ mass.data$er.veratrole)
 mass.data$sesqui<-(mass.data$er.alloaromadendrene+ mass.data$er.alpha.bergamotene + mass.data$er.alpha.humulene + mass.data$er.beta.cadinene + mass.data$er.beta.farnesene + mass.data$er.beta.longipinene + mass.data$er.caryophyllene.oxide + mass.data$er.DMNT + mass.data$er.gamma.cadinene + mass.data$er.germacrene.D + mass.data$er.intermedeol + mass.data$er.patchoulane + mass.data$er.trans.beta.caryophyllene + mass.data$er.trans.DMNT + mass.data$er.trans.trans.alpha.farnesene + mass.data$er.unknown.C15H24+mass.data$er.unknown.C15H24.2 + mass.data$er.unknown.C15H24.3)
 
-#plotting by group means
-
-
 #compounds only:
 
-mass.data.compounds<-mass.data[,17:70]
-
-#by species:
-
-mass.data.sp<-mass.data[,-c(1:14,16,71)]
-mass.data.sp$Species<-as.factor(mass.data.sp$Species)
-
-#working with unguiculata only:
-
-mass.data.u<-mass.data[which(mass.data$Species=="Ung"),]
-mass.data.u.comp<-mass.data.u[,c(17:70)]
-
-
-counts <- sapply(17:70,function(x) length(which(mass.data.u[,x]!=0)))
-counts.u<-data.frame(counts, compounds=colnames(mass.data.u)[17:70])
-
-
-
-mass.data.u.one<-mass.data.u[which(mass.data.u$Site.Type=="One"),]
-mass.data.u.two<-mass.data.u[which(mass.data.u$Site.Type=="Two"),]
-mass.data.u.four<-mass.data.u[which(mass.data.u$Site.Type=="Four"),]
-
-p<-pint.p(mass.data.u.one[,c(17:38,40:52,54:63,65:68,70)], tails=2)
-
-p2<-pint.p(mass.data.u.two[,c(17:38,40:56, 58:63,65:68,70)], tails=2)
-p3<-pint.p(mass.data.u.four[,c(17:38,40:56, 58,60:68)], tails=2)
-
-#working with cylindrica only:
-
-mass.data.c<-mass.data[which(mass.data$Species=="Cyl"),]
-mass.data.c.comp<-mass.data.c[,c(17:70)]
-
-mass.data.c.one<-mass.data.c[which(mass.data.c$Site.Type=="One"),]
-mass.data.c.two<-mass.data.c[which(mass.data.c$Site.Type=="Two"),]
-mass.data.c.four<-mass.data.c[which(mass.data.c$Site.Type=="Four"),]
-
-
-p<-pint.p(mass.data.c.one[,c(17:18,20:27, 29:51,53:55,58,61:64,66,68,69)], tails=2)
-
-p2<-pint.p(mass.data.c.two[,c(17,19:27, 29:51,53:55,57,58:59,61:64,65:66,68,69)],tails=2)
-p3<-pint.p(mass.data.c.four[,c(17,19:43,46:52,54:55, 57:58,61:64,66:69)],tails=2)
-
-
-counts <- sapply(17:70,function(x) length(which(mass.data.c[,x]!=0)))
-
-sum<-sapply(17:70,function(x) sum(mass.data.u.one[,x]))
-counts.c<-data.frame(counts, compounds=colnames(mass.data.c)[17:70])
-
-
-#by the site types:
-
-mass.data.one<-mass.data[which(mass.data$Site.Type=="One"),]
-mass.data.one.comp<-mass.data.one[,c(17:70)]
-
-mass.data.two<-mass.data[which(mass.data$Site.Type=="Two"),]
-mass.data.two.comp<-mass.data.two[,c(17:70)]
-
-mass.data.four<-mass.data[which(mass.data$Site.Type=="Four"),]
-mass.data.four.comp<-mass.data.four[,c(17:70)]
-
+mass.data.compounds<-mass.data[,12:65]
 
 #Frameworks:
 
 #A. Can analyze data with all 54 compounds by species x site type
-
-mass.data.comp<-read.csv("all_data_edit_standardized_er_mass_vc_edit_F_composite_compounds.csv", header=TRUE)
-
-mass.data.comp.compounds<-mass.data.comp[,c(17:47)]
-
-scents.permanova.u<-adonis(mass.data.u.comp~Site.Type/Site, data=mass.data.u, strata=mass.data.u$Site, permutations=999, method="bray")
-scents.permanova.c<-adonis(mass.data.c.comp~Site.Type/Site, data=mass.data.c, strata=mass.data.c$Site, permutations=999, method="bray")
-
-scents.permanova.one<-adonis(mass.data.one.comp~Species, data=mass.data.one, strata=mass.data.one$Site, permutations=999, method="bray")
-scents.permanova.two<-adonis(mass.data.two.comp~Species, data=mass.data.two, strata=mass.data.two$Site, permutations=999, method="bray")
-scents.permanova.four<-adonis(mass.data.four.comp~Species, data=mass.data.four, strata=mass.data.four$Site, permutations=999, method="bray")
-
+#first, adonis:
 scents.permanova<-adonis(mass.data.compounds~Site.Type*Species, data=mass.data, strata=mass.data$Site.Type, permutations=999, method="bray")
 
+scents.permanova
 
-#trying this with z scores
+#second, capscale:
 
-zscores<-read.csv("all_data_edit_standardized_er_mass_vc_edit_F_z_scores_final.csv", header=TRUE)
-zscores.compounds<-zscores[,c(17:70)]
-scents.permanova<-adonis(zscores.compounds~Site.Type*Species, data=zscores, strata=zscores$Site.Type, permutations=999, method="euclidean")
-
-
-
-#if worried about site to site variability, could standardize the volatiles at the site level with z scores
-
-
-
-scents.permanova<-adonis(mass.data.comp.compounds~Site.Type*Species, data=mass.data.comp, strata=mass.data.comp$Site, permutations=999, method="bray")
-
-
-pairwise.adonis2(mass.data.compounds~Species*Site.Type/Site, data=mass.data, strata="Site")
-
-mass.data$Code<-as.factor(paste(mass.data$Species,mass.data$Site.Type))
-mass.data.comp$Code<-as.factor(paste(mass.data.comp$Species,mass.data.comp$Site.Type))
-mass.data$Code.2<-as.factor(paste(mass.data$Species, mass.data$Site))
-
-#can run this with either the composites or the full dataset:
-scents.cap <-capscale(mass.data.compounds ~ Code, mass.data, dist="bray") 
-scents.cap
-plot(scents.cap, display=c("sp", "sites","cn"),type="text") 
-plot(scents.cap, display=c("sp", "cn"),type="text")
-plot(scents.cap, display=c("sp"),type="text")
-anova(scents.cap) 
-
-##trying without trans beta ocimene and cis 3 hexenyl acetate b/c of scale issues:
-
-mass.data.c.sub<-mass.data.compounds[,-c(25,47)]
-
-scents.permanova<-adonis(mass.data.c.sub~Site.Type*Species, data=mass.data, strata=mass.data$Site, permutations=999, method="bray")
 
 mass.data$Code<-as.factor(paste(mass.data$Species,mass.data$Site.Type))
 
 scents.cap <-capscale(mass.data.compounds ~ Code, mass.data, dist="bray") 
 scents.cap
-plot(scents.cap, type="n", xlim=c(-0.5,0.5))
+summary(scents.cap)
 
-ordiellipse(scents.cap, groups=mass.data$Code, col=color, kind="se",conf=0.95 , draw="polygon", alpha=50, border=color)
-ordibar(scents.cap, groups=mass.data$Code,  col = color, kind="se" )
-ordispider(scents.cap, groups=mass.data$Code,  col = color )
+#adding the capscale scores to the mass.data.compounds object, to be able to assess how correlated each compound is with the cap axes:
 
-plot(scents.cap, type="n", xlim=c(-0.5,0.5))
-
-points(scents.cap, pch=c(21,22)[mass.data$Species], bg= color[mass.data$Code],cex=1.5)
-
-#need to figure out how to better define legend
-legend(-3, -2, legend=levels(mass.data$Code), pch=c(21,21,21,22,22,22), col=color, cex=1)
-
-color<-c("red","purple", "green", "blue", "pink", "grey")
-
-color<-c("darkorchid3", "orchid1", "mediumorchid", "deeppink2", "hotpink1", "violetred3")
-
-color<-c("lightslateblue", "firebrick1", "goldenrod1", "lightslateblue", "firebrick1", "goldenrod1")
-
-color<-c("dodgerblue1", "firebrick1", "goldenrod1", "cadetblue1", "indianred1", "lightgoldenrod1")
-
-color.sites<-c("firebrick1", "dodgerblue1", "cadetblue1", "goldenrod1", "indianred1", "springgreen2", "royalblue2", "seagreen3", "lightgoldenrod1", "brown2", "gold", "darkolivegreen3")
-
-pl<-plot(scents.cap, type="n", correlation=TRUE, xlim=c(-0.5,0.5))
-#with(mass.data, points(pl, "site",pch=c(21,22)[mass.data$Species], bg= color[mass.data$Code],cex=1.5 ))
-with(mass.data, points(pl, "site",pch=c(21,22)[mass.data$Species], bg= color.sites[mass.data$Site],cex=1.5 ))
-
-text(pl, "sp", scaling=1, arrow=TRUE, length=0.05, col=4, cex=0.6, xpd=TRUE)
-
-
-points(scents.cap, pch=c(21,22)[mass.data$Species], bg= color[mass.data$Code],cex=1.5)
-text(scents.cap, "sp", arrow=TRUE, length=0.05, col=4, cex=0.6, xpd=TRUE)
-
-
-
-
-
-
-
-points(scents.cap, type="points", display="sites", col=color[mass.data$Code]) 
-plot(scents.cap, display=c("cn"),type="text")
-anova(scents.cap) 
-
-scores<-read.csv("CAP_scores.csv", header=TRUE)
-#or
-scores<-read.csv("CAP_scores_composites.csv", header=TRUE)
-
-#or
-scores<-read.csv("CAP_scores_mDist.csv", header=TRUE)
+scores<-as.data.frame(scores(scents.cap, display="sites"))
 
 
 mass.data.compounds.scores<-cbind(mass.data.compounds, scores)
-#or
-mass.data.compounds.scores<-cbind(mass.data.comp.compounds, scores)
-
-
-
-##figure out how to make a matrix into a dataframe that works for this!!
-
-
-#for the composite compounds, there are now 31 compound collumns
-cors <- as.data.frame(sapply(1:31,function(x) cor.test(mass.data.compounds.scores[,x],mass.data.compounds.scores$CAP1)))
-
-cors2 <- as.data.frame(sapply(1:31,function(x) cor.test(mass.data.compounds.scores[,x],mass.data.compounds.scores$CAP2)))
-pvals<-sapply(1:31,function(x) print(cors[,x]$p.value))
-pvals2<-sapply(1:31,function(x) print(cors2[,x]$p.value))
-pvals.a<-p.adjust(pvals, method="BH")
-pvals.a2<-p.adjust(pvals2, method="BH")
-
-
-co1<-sapply(1:31,function(x) print(cors[,x]$estimate))
-co2<-sapply(1:31,function(x) print(cors2[,x]$estimate))
-
-compounds<-colnames(mass.data.comp.compounds)
-
-
-c.table<-as.data.frame(cbind(compounds,cor1=co1,cap1=pvals.a,cor2=co2, cap2=pvals.a2))
-c.table$cap1<-as.numeric(as.character(c.table$cap1))
-c.table$cap2<-as.numeric(as.character(c.table$cap2))
-c.table$sig1<-rep("No", times=dim(c.table)[1])
-c.table$sig2<-rep("No", times=dim(c.table)[1])
-c.table$sig1<-ifelse(c.table$cap1 < 0.01, "Yes", c.table$sig1)
-c.table$sig2<-ifelse(c.table$cap2 < 0.01, "Yes", c.table$sig2)
-
-
-###
-
 
 cors <- as.data.frame(sapply(1:54,function(x) cor.test(mass.data.compounds.scores[,x],mass.data.compounds.scores$CAP1)))
 
 cors2 <- as.data.frame(sapply(1:54,function(x) cor.test(mass.data.compounds.scores[,x],mass.data.compounds.scores$CAP2)))
-pvals<-sapply(1:54,function(x) print(cors[,x]$p.value))
-pvals2<-sapply(1:54,function(x) print(cors2[,x]$p.value))
+pvals<-sapply(1:54,function(x) cors[,x]$p.value)
+pvals2<-sapply(1:54,function(x) cors2[,x]$p.value)
 pvals.a<-p.adjust(pvals, method="BH")
 pvals.a2<-p.adjust(pvals2, method="BH")
 
