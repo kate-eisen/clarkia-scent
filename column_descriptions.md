@@ -149,7 +149,7 @@ mass.*
 | BJ              | er.veratrole                                 | The emission rate of veratrole                                            |
 | BK              | er.verbenone                                 | The emission rate of verbenone                                            |
 
-## concentrations.csv
+## glvs\_2019\_wide.csv
 
 | Column Position | Column Name  | Description of Contents                                                                                             |
 | --------------- | ------------ | ------------------------------------------------------------------------------------------------------------------- |
@@ -170,6 +170,17 @@ mass.*
 | O               | Con.W.time   | The concentration in the wounded sample per hour                                                                    |
 | P               | Con.W.t.mass | The emission rate in micrograms per hour per gram of fresh mass in the wounded sample                               |
 | Q               | Difference   | Difference in the emission rates, calculated as the wounded value (column P) minus the non-wounded value (column L) |
+
+## glvs\_2018\_2019.csv
+
+| Column Position | Column Name | Description of Contents                                                                                                                                                                                                     |
+| --------------- | ----------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| A               | Plant       | Combined site, species and plant ID number identifier                                                                                                                                                                       |
+| B               | Site        | The name of the unique replicate community                                                                                                                                                                                  |
+| C               | Species     | The species of the sample. Cyl is C. cylindrica, Ung is C. unguiculata                                                                                                                                                      |
+| D               | Compound    | The name of the compound, either cis 3 hexen 1 ol or cis 3 hexenyl acetate. See Table S2 for IUPAC names                                                                                                                    |
+| E               | Type        | The type of sample: Con.N.t.mass refers to *non-wounded* samples from the *2019* garden, Con.W.t.mass refers to *wounded* samples from the *2019* garden, and *First CG* refers to samples from the *2018* original garden. |
+| F               | Con         | The emission rate, in micrograms of the compound per hour per gram of fresh mass                                                                                                                                            |
 
 ## SPME\_info.csv
 
