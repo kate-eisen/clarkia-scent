@@ -7,4 +7,4 @@ Available on bioRxiv:
 
 Description of files is in file_structure.txt
 
-Description of column contents in data files is in column_descriptions.txt
+Description of column contents in data files is in column_descriptions.md
