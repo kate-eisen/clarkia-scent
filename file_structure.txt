@@ -8,7 +8,9 @@ data **see column_descriptions.md for a description of each column in each file*
     
     SPME_info.csv: species and community information for the SPME samples.
     
-    concentrations.csv: wide-format data from wounding common garden. See appendix 2 for methodological details.
+    glvs_2019_wide.csv: wide-format data from wounding common garden. See appendix 2 for methodological details.
+    
+    glvs_2018_2019.csv: long-format data from wounding common garden and the emission rate of the "GLVs" in the original 2018 common garden.
    
 analysis_scripts
 
@@ -16,4 +18,5 @@ analysis_scripts
     
     plots.R : Contains all code needed to reproduce Figures 1, 2, and 3 in the main text of the manuscript (visualizing the capscale analysis, and plotting the means +/- SEs for the compound classes and the nine compounds that showed patterns consistent with character displacement.
     
+    GLV_script.R : Contains code needed to reproduce results in Appendix 2. Specifically, two-sample t-tests that compare the emission rates of GLVs in the 2019 wounded and control samples, and separate two-sample t-tests that compare these groups to the emission rates of plants in the original 2018 common garden.
     
