@@ -47,7 +47,7 @@ mass.*
 | AI              | er.cis.3.hexen.1.ol                          | The emission rate of cis 3 hexen 1 ol                                                      |
 | AJ              | er.cis.3.hexenyl.acetate                     | The emission rate of cis 3 hexenyl acetate                                                 |
 | AK              | er.cis.beta.ocimene                          | The emission rate of cis beta ocimene                                                      |
-| AL              | er.cis.jasmone                               | The emission rate of cis.jasmone                                                           |
+| AL              | er.cis.jasmone                               | The emission rate of cis jasmone                                                           |
 | AM              | er.DMNT                                      | The emission rate of cis dimethylnonatriene                                                |
 | AN              | er.gamma.cadinene                            | The emission rate of gamma cadinene                                                        |
 | AO              | er.gamma.terpinene                           | The emission rate of gamma terpinene                                                       |
@@ -60,19 +60,116 @@ mass.*
 | AV              | er.methyl.salicylate                         | The emission rate of methyl salicylate                                                     |
 | AW              | er.myroxide                                  | The emission rate of myroxide                                                              |
 | AX              | er.unknown.C15H24.3                          | The emission rate of unknown C15H24 \#3                                                    |
-| AY              | er.para.cymene                               | The emission rate of para.cymene                                                           |
+| AY              | er.para.cymene                               | The emission rate of para cymene                                                           |
 | AZ              | er.patchoulane                               | The emission rate of patchoulane                                                           |
-| BA              | er.beta.farnesene                            | The emission rate of beta farnesene                                                        |
-| BB              | er.beta.longipinene                          | The emission rate of beta longipinene                                                      |
-| BC              | er.beta.myrcene                              | The emission rate of beta myrcene                                                          |
-| BD              | er.beta.phellandrene                         | The emission rate of beta phellandrene                                                     |
-| BE              | er.beta.pinene                               | The emission rate of beta pinene                                                           |
-| BF              | er.borneol                                   | The emission rate of borneol                                                               |
-| BG              | er.caryophyllene.oxide                       | The emission rate of caryophyllene.oxide                                                   |
-| BH              | er.cinnamic.alcohol                          | The emission rate of cinnamic alcohol                                                      |
-| BI              | er.cis.3.hexen.1.ol                          | The emission rate of cis 3 hexen 1 ol                                                      |
-| BJ              | er.cis.3.hexenyl.acetate                     | The emission rate of cis 3 hexenyl acetate                                                 |
-| BK              | er.cis.beta.ocimene                          | The emission rate of cis beta ocimene                                                      |
-| BL              | er.cis.jasmone                               | The emission rate of cis.jasmone                                                           |
-| BM              | er.DMNT                                      | The emission rate of cis dimethylnonatriene                                                |
-| BN              | er.gamma.cadinene                            | The emission rate of gamma cadinene                                                        |
+| BA              | er.sabinene                                  | The emission rate of sabinene                                                              |
+| BB              | er.sabinene.hydrate                          | The emission rate of sabinene hydrate                                                      |
+| BC              | er.terpinen-4-ol                             | The emission rate of terpinene-4-ol                                                        |
+| BD              | er.trans.2.hexen.1.ol                        | The emission rate of trans 2 hexen 1 ol                                                    |
+| BE              | er.trans.beta.caryophyllene                  | The emission rate of trans beta caryophyllene                                              |
+| BF              | er.trans.beta.ocimene                        | The emission rate of trans beta ocimene                                                    |
+| BG              | er.trans.cinnamic.aldehyde                   | The emission rate of trans cinnamic aldehyde                                               |
+| BH              | er.trans.DMNT                                | The emission rate of trans dimethylnonatriene                                              |
+| BI              | er.trans.trans.alpha.farnesene               | The emission rate of trans trans alpha farnesene                                           |
+| BJ              | er.unknown.C15H24                            | The emission rate of unknown C15H24 \#1                                                    |
+| BK              | er.unknown.C15H24.2                          | The emission rate of unknown C15H24 \#2                                                    |
+| BL              | er.veratrole                                 | The emission rate of veratrole                                                             |
+| BM              | er.verbenone                                 | The emission rate of verbenone                                                             |
+
+## all\_data\_standardized\_flowers.csv:
+
+*For IUPAC compound names, please see Table S2. All emission rates in
+this file are in micrograms of the compound per hour per gram of floral
+fresh
+mass.*
+
+| Column Position | Column Name                                  | Description of Contents                                                   |
+| --------------- | -------------------------------------------- | ------------------------------------------------------------------------- |
+| A               | Order                                        | Abitrary ID to put rows in Species-Site Type-Site order                   |
+| B               | Run.Num                                      | When the sample was collected and run                                     |
+| C               | Run.Date                                     | The date when the sample was collected, in 2017-2018                      |
+| D               | Run.Plant                                    | The blind ID for the plant, 1 to N total plants run each day              |
+| E               | Flower.number                                | The number of open flowers included in the sample                         |
+| F               | Site                                         | The name of the unique replicate community                                |
+| G               | Site.Type                                    | The number of Clarkia species present in a community                      |
+| H               | Species                                      | The species of the sample. Cyl is C. cylindrica, Ung is C. unguiculata    |
+| I               | Plant                                        | The plant number (relative to all individuals from that species and site) |
+| J               | er.1.hexanol                                 | The emission rate of 1-hexanol                                            |
+| K               | er.2-amino.phenyl.ethanone                   | The emission rate of 2-amino phenyl ethanone                              |
+| L               | er.2-phenyl.ethanol                          | The emission rate of 2-phenyl.ethanol                                     |
+| M               | er.2,6-dimethyl-1,3,5,7.octatetraene.(trans) | The emission rate of 2,6-dimethyl-1,3,5,7.octatetraene.(trans)            |
+| N               | er.6-methyl-5-hepten-2-one                   | The emission rate of 6-methyl-5-hepten-2-one                              |
+| O               | er.alloaromadendrene                         | The emission rate of alloaromadendrene                                    |
+| P               | er.alpha.bergamotene                         | The emission rate of alpha bergamotene                                    |
+| Q               | er.alpha.humulene                            | The emission rate of alpha humulene                                       |
+| R               | er.alpha.pinene                              | The emission rate of alpha pinene                                         |
+| S               | er.alpha.terpineol                           | The emission rate of alpha terpineol                                      |
+| T               | er.alpha.terpinene                           | The emission rate of alpha terpinene                                      |
+| U               | er.alpha.terpinolene                         | The emission rate of alpha terpinolene                                    |
+| V               | er.benzyl.acetate                            | The emission rate of benzyl acetate                                       |
+| W               | er.benzyl.alcohol                            | The emission rate of benzyl alcohol                                       |
+| X               | er.beta.cadinene                             | The emission rate of beta cadinene                                        |
+| Y               | er.beta.farnesene                            | The emission rate of beta farnesene                                       |
+| Z               | er.beta.longipinene                          | The emission rate of beta longipinene                                     |
+| AA              | er.beta.myrcene                              | The emission rate of beta myrcene                                         |
+| AB              | er.beta.phellandrene                         | The emission rate of beta phellandrene                                    |
+| AC              | er.beta.pinene                               | The emission rate of beta pinene                                          |
+| AD              | er.borneol                                   | The emission rate of borneol                                              |
+| AE              | er.caryophyllene.oxide                       | The emission rate of caryophyllene.oxide                                  |
+| AF              | er.cinnamic.alcohol                          | The emission rate of cinnamic alcohol                                     |
+| AG              | er.cis.3.hexen.1.ol                          | The emission rate of cis 3 hexen 1 ol                                     |
+| AH              | er.cis.3.hexenyl.acetate                     | The emission rate of cis 3 hexenyl acetate                                |
+| AI              | er.cis.beta.ocimene                          | The emission rate of cis beta ocimene                                     |
+| AJ              | er.cis.jasmone                               | The emission rate of cis jasmone                                          |
+| AK              | er.DMNT                                      | The emission rate of cis dimethylnonatriene                               |
+| AL              | er.gamma.cadinene                            | The emission rate of gamma cadinene                                       |
+| AM              | er.gamma.terpinene                           | The emission rate of gamma terpinene                                      |
+| AN              | er.geraniol                                  | The emission rate of geraniol                                             |
+| AO              | er.germacrene.D                              | The emission rate of germacrene D                                         |
+| AP              | er.intermedeol                               | The emission rate of intermedeol                                          |
+| AQ              | er.limonene                                  | The emission rate of limonene                                             |
+| AR              | er.linalool                                  | The emission rate of linalool                                             |
+| AS              | er.methyl.nicotinate                         | The emission rate of methyl nicotinate                                    |
+| AT              | er.methyl.salicylate                         | The emission rate of methyl salicylate                                    |
+| AU              | er.myroxide                                  | The emission rate of myroxide                                             |
+| AV              | er.unknown.C15H24.3                          | The emission rate of unknown C15H24 \#3                                   |
+| AW              | er.para.cymene                               | The emission rate of para cymene                                          |
+| AX              | er.patchoulane                               | The emission rate of patchoulane                                          |
+| AY              | er.sabinene                                  | The emission rate of sabinene                                             |
+| AZ              | er.sabinene.hydrate                          | The emission rate of sabinene hydrate                                     |
+| BA              | er.terpinen-4-ol                             | The emission rate of terpinene-4-ol                                       |
+| BB              | er.trans.2.hexen.1.ol                        | The emission rate of trans 2 hexen 1 ol                                   |
+| BC              | er.trans.beta.caryophyllene                  | The emission rate of trans beta caryophyllene                             |
+| BD              | er.trans.beta.ocimene                        | The emission rate of trans beta ocimene                                   |
+| BE              | er.trans.cinnamic.aldehyde                   | The emission rate of trans cinnamic aldehyde                              |
+| BF              | er.trans.DMNT                                | The emission rate of trans dimethylnonatriene                             |
+| BG              | er.trans.trans.alpha.farnesene               | The emission rate of trans trans alpha farnesene                          |
+| BH              | er.unknown.C15H24                            | The emission rate of unknown C15H24 \#1                                   |
+| BI              | er.unknown.C15H24.2                          | The emission rate of unknown C15H24 \#2                                   |
+| BJ              | er.veratrole                                 | The emission rate of veratrole                                            |
+| BK              | er.verbenone                                 | The emission rate of verbenone                                            |
+
+## concentrations.csv
+
+| Column Position | Column Name | Description of Contents                                                                                             |
+| --------------- | ----------- | ------------------------------------------------------------------------------------------------------------------- |
+| A               | Plant       | Combined site, species and plant ID number identifier                                                               |
+| B               | Site        | The name of the unique replicate community                                                                          |
+| C               | Species     | The species of the sample. Cyl is C. cylindrica, Ung is C. unguiculata                                              |
+| D               | N.fl.N      | The number of flowers in the non-wounded sample                                                                     |
+| E               | Mass.fl.N   | The estimated mass of the flowers in the non-wounded sample. Multiplied column D by the relevant value in Table S1. |
+
+# 
+
+F | Site | The name of the unique replicate community G | Site.Type |
+The number of Clarkia species present in a community H | I | Plant | The
+plant number (relative to all individuals from that species and site) J
+| er.1.hexanol | The emission rate of 1-hexanol K |
+er.2-amino.phenyl.ethanone | The emission rate of 2-amino phenyl
+ethanone L |er.2-phenyl.ethanol | The emission rate of 2-phenyl.ethanol
+M | er.2,6-dimethyl-1,3,5,7.octatetraene.(trans) | The emission rate of
+2,6-dimethyl-1,3,5,7.octatetraene.(trans) N | er.6-methyl-5-hepten-2-one
+| The emission rate of 6-methyl-5-hepten-2-one O | er.alloaromadendrene
+| The emission rate of alloaromadendrene P | er.alpha.bergamotene | The
+emission rate of alpha bergamotene Q | er.alpha.humulene | The emission
+rate of alpha humulene
