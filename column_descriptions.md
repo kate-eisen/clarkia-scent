@@ -151,25 +151,42 @@ mass.*
 
 ## concentrations.csv
 
-| Column Position | Column Name | Description of Contents                                                                                             |
-| --------------- | ----------- | ------------------------------------------------------------------------------------------------------------------- |
-| A               | Plant       | Combined site, species and plant ID number identifier                                                               |
-| B               | Site        | The name of the unique replicate community                                                                          |
-| C               | Species     | The species of the sample. Cyl is C. cylindrica, Ung is C. unguiculata                                              |
-| D               | N.fl.N      | The number of flowers in the non-wounded sample                                                                     |
-| E               | Mass.fl.N   | The estimated mass of the flowers in the non-wounded sample. Multiplied column D by the relevant value in Table S1. |
+| Column Position | Column Name  | Description of Contents                                                                                             |
+| --------------- | ------------ | ------------------------------------------------------------------------------------------------------------------- |
+| A               | Plant        | Combined site, species and plant ID number identifier                                                               |
+| B               | Site         | The name of the unique replicate community                                                                          |
+| C               | Species      | The species of the sample. Cyl is C. cylindrica, Ung is C. unguiculata                                              |
+| D               | N.fl.N       | The number of flowers in the non-wounded sample                                                                     |
+| E               | Mass.fl.N    | The estimated mass of the flowers in the non-wounded sample Multiplied column D by the relevant value in Table S1   |
+| F               | N.fl.W       | The number of flowers in the wounded sample                                                                         |
+| G               | Mass.fl.W    | The estimated mass of the flowers in the wounded sample Multiplied column F by the relevant value in Table S1       |
+| H               | Compound     | The name of the compound, either cis 3 hexen 1 ol or cis 3 hexenyl acetate. See Table S2 for IUPAC names            |
+| I               | Con.N        | The concentration in the non-wounded sample                                                                         |
+| J               | Con.N.mass   | The mass-standardized concentration in the non-wounded sample                                                       |
+| K               | Con.N.time   | The concentration in the non-wounded sample per hour                                                                |
+| L               | Con.N.t.mass | The emission rate in micrograms per hour per gram of fresh mass in the non-wounded sample                           |
+| M               | Con.W        | The concentration in the wounded sample                                                                             |
+| N               | Con.W.mass   | The mass-standardized concentration in the wounded sample                                                           |
+| O               | Con.W.time   | The concentration in the wounded sample per hour                                                                    |
+| P               | Con.W.t.mass | The emission rate in micrograms per hour per gram of fresh mass in the wounded sample                               |
+| Q               | Difference   | Difference in the emission rates, calculated as the wounded value (column P) minus the non-wounded value (column L) |
 
-# 
+## SPME\_info.csv
 
-F | Site | The name of the unique replicate community G | Site.Type |
-The number of Clarkia species present in a community H | I | Plant | The
-plant number (relative to all individuals from that species and site) J
-| er.1.hexanol | The emission rate of 1-hexanol K |
-er.2-amino.phenyl.ethanone | The emission rate of 2-amino phenyl
-ethanone L |er.2-phenyl.ethanol | The emission rate of 2-phenyl.ethanol
-M | er.2,6-dimethyl-1,3,5,7.octatetraene.(trans) | The emission rate of
-2,6-dimethyl-1,3,5,7.octatetraene.(trans) N | er.6-methyl-5-hepten-2-one
-| The emission rate of 6-methyl-5-hepten-2-one O | er.alloaromadendrene
-| The emission rate of alloaromadendrene P | er.alpha.bergamotene | The
-emission rate of alpha bergamotene Q | er.alpha.humulene | The emission
-rate of alpha humulene
+| Column Position | Column Name | Description of Contents                                                                                                                                      |
+| --------------- | ----------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| A               | Sample      | The sample ID. Number refers to the order the sample was collected and run. The A and B letters indicate the pair of samples from the plant                  |
+| B               | Site        | The name of the unique replicate community                                                                                                                   |
+| C               | Species     | The species of the sample. Cyl is C. cylindrica, Ung is C. unguiculata                                                                                       |
+| D               | Type        | The sample type: Petals is a petal sample, non-petals is a sample of the rest of the flowers. 3.Fl is a three-flower sample, and 6.Fl is a six flower sample |
+
+## SPME\_data\_no\_blanks.csv
+
+| Column Position | Column Name | Description of Contents                                                                                                          |
+| --------------- | ----------- | -------------------------------------------------------------------------------------------------------------------------------- |
+| A               | Date        | Date the sample was run. All sample were run in 2019.                                                                            |
+| B               | Sample      | The sample ID                                                                                                                    |
+| C               | Peak\#      | The number of a given peak within a given sample (a relative value that could change from sample to sample for a given compound) |
+| D               | Ret.Time    | The retention time of the compound                                                                                               |
+| E               | Area        | The peak area of the compound                                                                                                    |
+| F               | Name        | The name of the compound. See Table S2 for IUPAC names                                                                           |

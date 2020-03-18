@@ -167,3 +167,24 @@ O  | Con.W.time | The concentration in the wounded sample per hour
 P  | Con.W.t.mass | The emission rate in micrograms per hour per gram of fresh mass in the wounded sample
 Q | Difference | Difference in the emission rates, calculated as the wounded value (column P) minus the non-wounded value (column L)
 
+## SPME_info.csv
+Column Position  | Column Name | Description of Contents
+------------- | ------------- | -------------------------
+A  | Sample | The sample ID. Number refers to the order the sample was collected and run. The A and B letters indicate the pair of samples from the plant
+B  | Site  | The name of the unique replicate community
+C  | Species  | The species of the sample. Cyl is C. cylindrica, Ung is C. unguiculata
+D  | Type  | The sample type: Petals is a petal sample, non-petals is a sample of the rest of the flowers. 3.Fl is a three-flower sample, and 6.Fl is a six flower sample
+
+## SPME_data_no_blanks.csv
+Column Position  | Column Name | Description of Contents
+------------- | ------------- | -------------------------
+A  | Date | Date the sample was run. All sample were run in 2019.
+B  | Sample  | The sample ID
+C  | Peak#  | The number of a given peak within a given sample (a relative value that could change from sample to sample for a given compound)
+D  | Ret.Time  | The retention time of the compound
+E  | Area | The peak area of the compound
+F  | Name | The name of the compound. See Table S2 for IUPAC names
+
+
+
+
