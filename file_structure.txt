@@ -1,4 +1,4 @@
-data **see column_descriptions.txt for a description of each column in each file**
+data **see column_descriptions.md for a description of each column in each file**
 
     all_data_standardized_mass.csv : scent data per individual plant. Emission rates are in micrograms scent per hour per g floral fresh mass. Emission rates have been adjusted so that all compounds were present in a minimum of 5x the concentration of the compound in the ambient control and vegetative control samples. Emission rates that did not pass this ratio test were entered as zeros.
     
