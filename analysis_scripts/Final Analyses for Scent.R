@@ -2,53 +2,23 @@
 
 #basics:
 
-setwd("../Scent")
 
-library(randomForest)
-library(VSURF)
-library(rfUtilities)
+
+
 library(multcomp)
 library(lme4)
 library(emmeans)
 
-install_github("pmartinezarbizu/pairwiseAdonis/pairwiseAdonis")
-
-library(pairwiseAdonis)
-
-gg_color_hue <- function(n) {
-  hues = seq(15, 375, length = n + 1)
-  hcl(h = hues, l = 65, c = 100)[1:n]
-}
-n=9
-cols = gg_color_hue(n)
-
-#load in data:
-
-counts <- sapply(17:70,function(x) length(mass.data[,x]!=0, by=mass.data$Code))
-
-counts <- sapply(17:70,function(x) aggregate(x~mass.data$Code, length))
-
-for (i in unique(mass.data$Code.2))
-x[,i]<-as.data.frame(sapply(17:70,function(x) length(which(mass.data[,x]!=0 & mass.data$Code.2==i))))
-
-
-x<-x[,2:19]
-x$Compounds<-colnames(mass.data[,17:70])
-
-
 #the entire, mass-standardized, data file:
 
-mass.data<-read.csv("all_data_edit_standardized_er_mass_vc_edit_F.csv", header=TRUE)
+mass.data<-read.csv("data/all_data_standardized_mass.csv", header=TRUE)
+
+##take out columns that don't need to be in the file; then adjust column number selections as needed throughout
 mass.data$Site.Type<-factor(mass.data$Site.Type, levels=c("One", "Two", "Four"))
 
 #adding in total scent:
 
-mass.data$total<-mass.data[,17]+mass.data[,18]
-
 mass.data$total<-rowSums(cbind(mass.data[,c(17:70)]))
-
-table<-(mass.data$er.sabinene, mass.data$Species)
-Count <- ave(mass.data$er.2.6.dimethyl.1.3.5.7.octatetraene..trans., mass.data$Species, FUN = function(x) sum(x!=0))
 
 #adding in type of compounds:
 
@@ -258,9 +228,11 @@ mass.data$Code.2<-as.factor(paste(mass.data$Species, mass.data$Site))
 
 #can run this with either the composites or the full dataset:
 scents.cap <-capscale(mass.data.compounds ~ Code, mass.data, dist="bray") 
-scents.cap plot(scents.cap, display=c("sp", "sites","cn"),type="text") 
+scents.cap
+plot(scents.cap, display=c("sp", "sites","cn"),type="text") 
 plot(scents.cap, display=c("sp", "cn"),type="text")
-plot(scents.cap, display=c("sp"),type="text") anova(scents.cap) 
+plot(scents.cap, display=c("sp"),type="text")
+anova(scents.cap) 
 
 ##trying without trans beta ocimene and cis 3 hexenyl acetate b/c of scale issues:
 
@@ -312,7 +284,8 @@ text(scents.cap, "sp", arrow=TRUE, length=0.05, col=4, cex=0.6, xpd=TRUE)
 
 
 points(scents.cap, type="points", display="sites", col=color[mass.data$Code]) 
-plot(scents.cap, display=c("cn"),type="text") anova(scents.cap) 
+plot(scents.cap, display=c("cn"),type="text")
+anova(scents.cap) 
 
 scores<-read.csv("CAP_scores.csv", header=TRUE)
 #or
@@ -395,7 +368,8 @@ manova.scents<-manova(as.matrix(mass.data.compounds)~Code)
 scents.can <- candisc(manova.scents, data=mass.data, scores=TRUE)
 coefs<-as.data.frame(scents.can$coeffs.std)
 
- 
+
+
 greedy.wilks(mass.data.compounds, Code, data=mass.data)
 stepclass(mass.data.compounds, grouping=mass.data$Code, method="lda")
 

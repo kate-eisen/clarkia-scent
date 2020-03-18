@@ -1,0 +1,59 @@
+﻿Sample,Site,Species,Type
+10A,CB323,Ung,Petals
+10B,CB323,Ung,Not Petals
+11A,SC,Ung,Not Petals
+11B,SC,Ung,Petals
+12A,SC,Ung,3.Fl
+12B,SC,Ung,6.Fl
+13A,SC,Cyl,Petals
+13B,SC,Cyl,Not Petals
+14A,SC,Cyl,6.Fl
+14B,SC,Cyl,3.Fl
+15A,CB323,Ung,Petals
+15B,CB323,Ung,Not Petals
+16A,CB323,Ung,6.Fl
+16B,CB323,Ung,3.Fl
+17A,CB323,Ung,3.Fl
+17B,CB323,Ung,6.Fl
+18A,CB323,Ung,3.Fl
+18B,CB323,Ung,6.Fl
+19A,MHG,Cyl,Petals
+19B,MHG,Cyl,Not Petals
+1A,CB323,Ung,Petals
+1B,CB323,Ung,Not Petals
+20A,MHG,Cyl,Not Petals
+20B,MHG,Cyl,Petals
+21A,MHG,Cyl,3.Fl
+21B,MHG,Cyl,6.Fl
+22A,SC,Cyl,6.Fl
+22B,SC,Cyl,3.Fl
+23A,SC,Cyl,Petals
+23B,SC,Cyl,Not Petals
+24A,SC,Cyl,3.Fl
+24B,SC,Cyl,6.Fl
+25A,MHG Cyl 9,NA,6 F stigmas
+25B,MHG Cyl 9,NA,6 F anthers
+26A,MHG Cyl 9,NA,6 M anthers
+26B,MHG Cyl 9,NA,6 M stigmas
+27A,NP Ung 24,NA,6 stigmas
+27B,NP Ung 24,NA,6 anthers
+2A,MHG,Cyl,6.Fl
+2B,MHG,Cyl,3.Fl
+3A,SC,Ung,3.Fl
+3B,SC,Ung,6.Fl
+4A,SC,Ung,6.Fl
+4B,SC,Ung,3.Fl
+5A,SC,Cyl,Not Petals
+5B,SC,Cyl,Petals
+6A,MHG,Cyl,3.Fl
+6B,MHG,Cyl,6.Fl
+7A,SC,Ung,Not Petals
+7B,SC,Ung,Petals
+8A,MHG,Cyl,Petals
+8B,MHG,Cyl,Not Petals
+9A,SC,Ung,Not Petals
+9B,SC,Ung,Petals
+VEG 1,SC,Ung,VEG
+VEG 2,MHG,Cyl,VEG
+VEG 3,CB323,Ung,VEG
+VEG 4,SC,Cyl,VEG
