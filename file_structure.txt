@@ -9,3 +9,11 @@ data **see column_descriptions.md for a description of each column in each file*
     SPME_info.csv: species and community information for the SPME samples.
     
     concentrations.csv: wide-format data from wounding common garden. See appendix 2 for methodological details.
+   
+analysis_scripts
+
+    Main_analyses_for_scent.R : Contains all main analyses performed in the manuscript. Two multivariate analyses: adonis and capscale. Then, provides code to identify which of the scent compounds are highly correlated with the capscale axes. Tests of variation across species and community types in total scent, the four compound classes, and the nine compounds that show patterns consistent with character displacement. Tests for the compounds that were correlated with the capscale axes but did not show a pattern consistent with character displacement are not included, but could be run using very lightly modified code.
+    
+    plots.R : Contains all code needed to reproduce Figures 1, 2, and 3 in the main text of the manuscript (visualizing the capscale analysis, and plotting the means +/- SEs for the compound classes and the nine compounds that showed patterns consistent with character displacement.
+    
+    
