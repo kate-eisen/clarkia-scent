@@ -92,3 +92,5 @@ km2 <- mixed_model(er.trans.beta.ocimene ~ Site.Type+Species, random = ~ 1 | Sit
 #also, is there some kind of hurdle model that is better for this data?
 hist(resid(mode))
 plot(predict(mode),resid(mode)) 
+
+

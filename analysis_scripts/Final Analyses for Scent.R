@@ -5,6 +5,7 @@
 library(vegan)
 library(multcomp)
 library(lme4)
+library(lmerTest)
 library(emmeans)
 
 #the entire, mass-standardized, data file:
@@ -27,9 +28,8 @@ mass.data$sesqui<-(mass.data$er.alloaromadendrene+ mass.data$er.alpha.bergamoten
 
 mass.data.compounds<-mass.data[,12:65]
 
-#Frameworks:
 
-#A. Can analyze data with all 54 compounds by species x site type
+#A. Multivariate analyses:
 #first, adonis:
 scents.permanova<-adonis(mass.data.compounds~Site.Type*Species, data=mass.data, strata=mass.data$Site.Type, permutations=999, method="bray")
 
@@ -60,8 +60,8 @@ pvals.a<-p.adjust(pvals, method="BH")
 pvals.a2<-p.adjust(pvals2, method="BH")
 
 
-co1<-sapply(1:54,function(x) print(cors[,x]$estimate))
-co2<-sapply(1:54,function(x) print(cors2[,x]$estimate))
+co1<-sapply(1:54,function(x) cors[,x]$estimate)
+co2<-sapply(1:54,function(x) cors2[,x]$estimate)
 
 
 compounds<-colnames(mass.data.compounds)
@@ -75,28 +75,9 @@ c.table$sig1<-ifelse(c.table$cap1 < 0.01, "Yes", c.table$sig1)
 c.table$sig2<-ifelse(c.table$cap2 < 0.01, "Yes", c.table$sig2)
 
 
-ggplot(aes(x=Site.Type, y=er.veratrole, fill=Species), data=mass.data)+geom_boxplot()
+## B. Univariate analyses
+#first, total scent:
 
-model<-lmer(er.veratrole~Site.Type*Species+(1|Site), data=mass.data)
-
-
-##
-Code<-as.factor(mass.data$Code)
-#Y<-cbind(mass.data.compounds[1:54])
-manova.scents<-manova(as.matrix(mass.data.compounds)~Code)
-scents.can <- candisc(manova.scents, data=mass.data, scores=TRUE)
-coefs<-as.data.frame(scents.can$coeffs.std)
-
-
-
-greedy.wilks(mass.data.compounds, Code, data=mass.data)
-stepclass(mass.data.compounds, grouping=mass.data$Code, method="lda")
-
-
-
-#B. Can analyze data with a subset of the 54 compounds via variable selection by species x site type
-
-#C. Can analyze total scent emission by species x site type
 
 total<-lmer(sqrt(total)~Site.Type*Species+ (1|Site), data=mass.data)
 
@@ -105,15 +86,11 @@ plot(predict(total),resid(total))
 summary(total)
 anova(total)
 
-ggplot(aes(x=Site.Type, y=er.alpha.pinene, fill=Species), data=mass.data)+geom_boxplot()+xlab("")+ylab("Aromatics scent emission")+theme_classic()
 
 emmeans(total, "Species",type="response" )
 contrast<-emmeans(total, pairwise~Species|Site.Type, type="response")
-contrast<-emmeans(total, pairwise~Site.Type|Species, type="response")
 
-
-
-#D. Can analyze scent emission in categories (e.g. monoterpenes, sesequiterpenes, etc.) by species x site types
+#second, compound classes:
 
 ses<-lmer(log(glv+0.0001)~Site.Type*Species+ (1|Site), data=mass.data)
 hist(resid(ses))
@@ -131,18 +108,8 @@ ses<-lmer(sqrt(arom)~Site.Type*Species+ (1|Site), data=mass.data)
 hist(resid(ses))
 plot(predict(ses),resid(ses)) 
 
-mass.data$c.comps<-mass.data$er.veratrole+mass.data$er.trans.cinnamic.aldehyde
-mass.data$u.comps<-mass.data$er.2.amino.phenyl.ethenone+
-mass.data$er.alpha.pinene+mass.data$er.beta.pinene+
-mass.data$er.gamma.terpinene+mass.data$er.sabinene.hydrate+
-mass.data$er.methyl.nicotinate
 
-size.data<-read.csv("../GH CG 2015/CG_All_Traits_Feb_2016.csv", header=TRUE)
-size.data.cu<-size.data[which(size.data$Sp=="Cyl"|size.data$Sp=="Ung"),]
-size.data.cu<-size.data.cu[!is.na(size.data.cu$Petal.area.mm),]
-
-tapply(size.data.cu$Petal.area.mm/10, list(size.data.cu$Sp, size.data.cu$Site.Type), mean)
-
+#third, the nine compounds that were significantly correlated with the cap axes:
 
 ses<-lmer(sqrt(er.2.amino.phenyl.ethenone)~Site.Type*Species+ (1|Site), data=mass.data)
 ses<-lmer(log(er.alpha.pinene+0.001)~Site.Type*Species+ (1|Site), data=mass.data)
@@ -158,65 +125,13 @@ anova(ses)
 contrast<-emmeans(ses, pairwise~Species|Site.Type, type="response")
 contrast
 
-#contrast.matrix3 <- rbind(
- # `C vs. U: Four vs One` = c(0, 0, 0, 0, -1, 0),
-  #`C vs. U: Four vs Two` = c(0, 0, 0, 0, 0, -1),
- # `C vs. U: One vs Two` = c(0, 0, 0, 0, 1, -1))
   
   
   contrast.matrix3 <- rbind(
-  `C-U: alone vs together` = c(0, 0, 0, 0, 1, 0),
-  `C-U: alone vs with friends` = c(0, 0, 0, 0, 0, 1),
-  `C-U: together vs with friends` = c(0, 0, 0, 0, -1, 1))
+  `C-U: one vs two` = c(0, 0, 0, 0, 1, 0),
+  `C-U: one vs four` = c(0, 0, 0, 0, 0, 1),
+  `C-U: two vs four` = c(0, 0, 0, 0, -1, 1))
   
   comps3 <- glht(ses, contrast.matrix3)
 summary(comps3)
-
-
-
-
-
-#Main Questions:
-
-#1. Are there differences across species or site types in emission rates?
-
-#1A. What is responsible for this variation?
-#1B. Do the most important/most emitted compounds vary across the site types?
-#1C. Do the compounds that are important in the profiles of both species change across site types?
-#1D. Do the compounds that are unique to each species change across site types?
-
-
-#Other questions:
-
-#1. Where are compounds made?
-
-#1A. Are the same compounds made in the same floral parts across the species?
-
-#2. Does the correlation between compounds change across species and site types?
-
-#use package "cocor"
-
-library(cocor)
-#comparision a: alpha humulene and caryophyllene
-cocor(~er.alpha.humulene +er.trans.beta.caryophyllene|er.alpha.humulene +er.trans.beta.caryophyllene, data=list(mass.data.u.four, mass.data.u.two))
-
-#comparison b: GLVs
-cocor(~er.cis.3.hexen.1.ol +er.cis.3.hexenyl.acetate |er.cis.3.hexen.1.ol +er.cis.3.hexenyl.acetate, data=list(mass.data.c.one, mass.data.c.four))
-
-cocor(~mono +sesqui |mono +sesqui, data=list(mass.data.u.one, mass.data.u.four))
-
-#glvs are positively correlated in U but not in C
-
-  
-
-#questions:
-
-
-##for adonis, how do you determine what variables are driving the observed results?
-
-##which compounds do we expect to be strongly correlated?
-#a. alpha humulene and caryophyllene
-#b. the GLVs
-#c. classes of compounds, eg. monoterpenes and sesquiterpenes?
-
 
