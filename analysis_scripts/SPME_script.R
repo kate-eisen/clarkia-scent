@@ -42,5 +42,9 @@ scent.div<-adonis2(scent.dist~petals, data=matrix, permutations = 999, method="j
 scent.div
 
 matrix<-matrix[order(matrix$Sample.Type),]
+
+matrix %>% group_by(Sample.Type) %>% 
+  summarise(m.Total=mean(Total))
+
 test<-wilcox.test(matrix$Total[1:12], matrix$Total[13:24], paired=TRUE)
 Zstat<-qnorm(test$p.value/2)
