@@ -1,7 +1,12 @@
 
+library(dplyr)
 
 #for comparing the three vs six flower samples, I counted the number of compounds that each sample had in total, and in each of the four compound classes:
 three.six<-read.csv("data/3_6_spmes.csv", header=TRUE)
+
+#getting means:
+three.six %>% group_by(Type) %>% 
+  summarise(m.Total=mean(Total.N), m.Mono=mean(N.mono), m.Sesqui=mean(N.sesqui), m.arom=mean(N.arom), m.GLV=mean(N.glv))
 
 #total:
 test <- wilcox.test(three.six[1:12,1], three.six[13:24,1], paired=TRUE)
