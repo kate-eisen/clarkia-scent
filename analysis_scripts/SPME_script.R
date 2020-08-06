@@ -48,3 +48,4 @@ matrix %>% group_by(Sample.Type) %>%
 
 test<-wilcox.test(matrix$Total[1:12], matrix$Total[13:24], paired=TRUE)
 Zstat<-qnorm(test$p.value/2)
+
