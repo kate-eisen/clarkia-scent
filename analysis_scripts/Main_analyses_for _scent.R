@@ -122,7 +122,7 @@ ses<-lmer(sqrt(er.veratrole)~Site.Type*Species+ (1|Site), data=mass.data)
 ses<-lmer(log(er.cis.3.hexenyl.acetate+0.001)~Site.Type*Species+ (1|Site), data=mass.data)
 anova(ses)
 
-contrast<-emmeans(ses, pairwise~Species|Site.Type, type="response")
+contrast<-emmeans(ses, pairwise~Site.Type|Species, type="response")
 contrast
 
   
