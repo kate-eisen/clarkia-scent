@@ -96,17 +96,76 @@ ses<-lmer(log(glv+0.0001)~Site.Type*Species+ (1|Site), data=mass.data)
 hist(resid(ses))
 plot(predict(ses),resid(ses)) 
 
+anova(ses)
+
+contrast<-emmeans(ses, pairwise~Site.Type|Species, type="response")
+contrast
+
+
+
+contrast.matrix3 <- rbind(
+  `C-U: one vs two` = c(0, 0, 0, 0, 1, 0),
+  `C-U: one vs four` = c(0, 0, 0, 0, 0, 1),
+  `C-U: two vs four` = c(0, 0, 0, 0, -1, 1))
+
+comps3 <- glht(ses, contrast.matrix3)
+summary(comps3)
+
 ses<-lmer(log(sesqui+0.0001)~Site.Type*Species+ (1|Site), data=mass.data)
 hist(resid(ses))
 plot(predict(ses),resid(ses)) 
+
+anova(ses)
+
+contrast<-emmeans(ses, pairwise~Site.Type|Species, type="response")
+contrast
+
+
+contrast.matrix3 <- rbind(
+  `C-U: one vs two` = c(0, 0, 0, 0, 1, 0),
+  `C-U: one vs four` = c(0, 0, 0, 0, 0, 1),
+  `C-U: two vs four` = c(0, 0, 0, 0, -1, 1))
+
+comps3 <- glht(ses, contrast.matrix3)
+summary(comps3)
 
 ses<-lmer(sqrt(mono)~Site.Type*Species+ (1|Site), data=mass.data)
 hist(resid(ses))
 plot(predict(ses),resid(ses)) 
 
+anova(ses)
+
+contrast<-emmeans(ses, pairwise~Site.Type|Species, type="response")
+contrast
+
+
+
+contrast.matrix3 <- rbind(
+  `C-U: one vs two` = c(0, 0, 0, 0, 1, 0),
+  `C-U: one vs four` = c(0, 0, 0, 0, 0, 1),
+  `C-U: two vs four` = c(0, 0, 0, 0, -1, 1))
+
+comps3 <- glht(ses, contrast.matrix3)
+summary(comps3)
+
 ses<-lmer(sqrt(arom)~Site.Type*Species+ (1|Site), data=mass.data)
 hist(resid(ses))
 plot(predict(ses),resid(ses)) 
+
+anova(ses)
+
+contrast<-emmeans(ses, pairwise~Site.Type|Species, type="response")
+contrast
+
+
+
+contrast.matrix3 <- rbind(
+  `C-U: one vs two` = c(0, 0, 0, 0, 1, 0),
+  `C-U: one vs four` = c(0, 0, 0, 0, 0, 1),
+  `C-U: two vs four` = c(0, 0, 0, 0, -1, 1))
+
+comps3 <- glht(ses, contrast.matrix3)
+summary(comps3)
 
 
 #third, the nine compounds that were significantly correlated with the cap axes:
